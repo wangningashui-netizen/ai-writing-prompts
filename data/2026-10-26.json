@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2114692810003611779",
+      "title": "小红书标题五条",
+      "category": "小红书",
+      "summary": "按受众、风格和禁用词约束，一次写出五条可直接用的小红书标题。",
+      "prompt": "请写 5 个小红书标题。\n给谁看：想用 AI 写小红书、但写出的文案一眼像 AI 的上班族\n要什么：能直接用的标题，带数字或对比感，不要假大空\n照着谁写：语气像朋友聊天，短句，口语\n不要什么：不要「赋能」「闭环」「干货满满」，不要 emoji，不要感叹号堆砌\n主题：用 AI 改掉文案里的 AI 味",
+      "lang": "zh",
+      "author": "WANGaf2a",
+      "authorName": "WANG",
+      "url": "https://x.com/WANGaf2a/status/2114692810003611779",
+      "createdAt": "2026-10-26T12:17:09.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2114690423230730534",
+      "title": "周报事实核验写作",
+      "category": "邮件",
+      "summary": "只依据编号材料写周报，先出可验收基础版，再按指令追加一项可核查任务。",
+      "prompt": "只用以下获准提供的材料写周报：整理进展、待办，每条事实标注材料编号。先给基础版，暂不加新任务。验收通过后，再根据我的指令增加一项：比较两周变化，或列出待核实的风险。缺数据就说明缺失，不编数字；建议和已发生事实分开。\n材料：[在此粘贴并编号：1、2……]",
+      "lang": "zh",
+      "author": "Bagel8343",
+      "authorName": "Bagel🥯",
+      "url": "https://x.com/Bagel8343/status/2114690423230730534",
+      "createdAt": "2026-10-26T12:07:40.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2114610789936177614",
+      "title": "跟进邮件锁事实保语气",
+      "category": "邮件",
+      "summary": "用语气样本改写跟进邮件，固定姓名截止日期，禁止擅自加承诺。",
+      "prompt": "Rewrite my draft here as plain text. Use the samples only for tone, not their names or facts. Keep every original name, deadline, task and open question. Add no promises or answers. Use plain, friendly English, one opening sentence of at most 12 words, and a brief closing. Output only the email. No apps or sending.\n\nTone samples: [paste 2–3 examples]\nDraft: [paste]",
+      "lang": "en",
+      "author": "FF6244101372139",
+      "authorName": "F.K | Everyday AI",
+      "url": "https://x.com/FF6244101372139/status/2114610789936177614",
+      "createdAt": "2026-10-26T06:51:14.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}

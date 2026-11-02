@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2115069852696330464",
+      "title": "数据删除与退出请求信",
+      "category": "邮件",
+      "summary": "起草面向数据经纪商的专业退出/删除请求，含占位符与适用权利说明。",
+      "prompt": "Draft a professional data removal and opt-out request to [data broker name]. Reference applicable CCPA/CPRA privacy rights where relevant. Use placeholders for my name, email, and address, and explain any identity verification or submission requirements.",
+      "lang": "en",
+      "author": "Hey_davidmax",
+      "authorName": "David max",
+      "url": "https://x.com/Hey_davidmax/status/2115069852696330464",
+      "createdAt": "2026-10-27T13:15:23.000Z",
+      "likes": 5,
+      "bookmarks": 5
+    },
+    {
+      "id": "2115013139754311823",
+      "title": "通话笔记五行走进邮件",
+      "category": "邮件",
+      "summary": "只用原始通话笔记写五行走进邮件，缺信息就提问不瞎补。",
+      "prompt": "Below are my raw call notes. Write a 5 line recap email: what they want, what I proposed, the next step. Use only my notes. If something is missing, ask me instead of guessing.\n\nPaste your notes under it.",
+      "lang": "en",
+      "author": "solostackwithai",
+      "authorName": "Solo Stack | AI for solo businesses",
+      "url": "https://x.com/solostackwithai/status/2115013139754311823",
+      "createdAt": "2026-10-27T09:30:02.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2114885547542102036",
+      "title": "需求改写成可执行指令",
+      "category": "其他",
+      "summary": "让AI把模糊需求补全目标、排除项和输出格式，变成可直接执行的指令。",
+      "prompt": "把这个需求改写成 AI 能直接执行的指令。帮我逐一补充：我的目标是什么、要排除什么、需要什么格式的输出。",
+      "lang": "zh",
+      "author": "MissCat_AI",
+      "authorName": "猫小姐学AI",
+      "url": "https://x.com/MissCat_AI/status/2114885547542102036",
+      "createdAt": "2026-10-27T01:03:01.000Z",
+      "likes": 1,
+      "bookmarks": 0
+    },
+    {
+      "id": "2114858150537130057",
+      "title": "去AI味六规则改写",
+      "category": "润色",
+      "summary": "用六条禁规则和自检表改写正文，压掉套话、排比与空泛总结。",
+      "prompt": "【去AI味改写指令】\n请按下面6条规则改写我给的文字，事实、数字和观点保持不变：\n1. 删掉开场白和收尾客套，不写“在当今时代”“总之”“希望对你有帮助”。\n2. 不预告重点：删掉“值得注意的是”“关键在于”“本质上”，直接说内容。\n3. 少用排比和对仗：不硬凑三点，不写“不是A，而是B”。\n4. 每段只说一件事，段尾不做总结。\n5. 免责和提醒只说一次，放在最需要的地方。\n6. 用具体代替抽象：能写数字、例子、人名的地方，不写“显著提升”“多方面”。\n语气像跟同事说话，句子长短交错，可以用口语。\n只输出改写后的正文，不要解释改了什么。\n\n改完再过一遍自检：\n□ 第一句有没有信息\n□ 搜一下“值得注意”“关键在于”“本质上”“总之”\n□ 数一数“不是…而是…”和三连排比\n□ 每段最后一句删掉，意思还在不在\n□ 加粗、emoji、小标题是不是比内容还多",
+      "lang": "zh",
+      "author": "NanshanTalk",
+      "authorName": "南山Talk",
+      "url": "https://x.com/NanshanTalk/status/2114858150537130057",
+      "createdAt": "2026-10-26T23:14:09.000Z",
+      "likes": 0,
+      "bookmarks": 2
+    }
+  ]
+}

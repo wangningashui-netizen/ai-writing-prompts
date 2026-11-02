@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="如水成文：从 X 收集的可复用 AI 写作提示词。润色、文案、小红书、剧本、演讲、邮件与内容矩阵。">
+  <meta name="theme-color" content="#f3efe7">
+  <meta property="og:title" content="如水成文">
+  <meta property="og:description" content="从 X 收集的可复用写作提示词">
+  <meta property="og:type" content="website">
+  <title>如水成文 · 写作提示词</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#feed">跳到内容</a>
+
+  <header class="mast">
+    <div class="wrap mast-inner">
+      <div class="brand">
+        <svg class="seal" viewBox="0 0 72 72" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="65" height="65" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <rect x="8.5" y="8.5" width="55" height="55" rx="2" fill="none" stroke="currentColor" stroke-width="1.15"/>
+          <circle cx="36" cy="22" r="2.05" fill="currentColor"/>
+          <path d="M20 31.2h32" stroke="currentColor" stroke-width="2.35" stroke-linecap="round"/>
+          <path d="M36 31.2c-1.6 8-9.2 16.2-18.2 21" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round"/>
+          <path d="M36 31.2c1.8 7.4 9.6 14.6 19.2 18.6" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-text">
+          <p class="eyebrow">写作提示词</p>
+          <h1>如水成文</h1>
+          <p class="tagline">来自 X 的可复用写作指令</p>
+        </div>
+      </div>
+      <div class="mast-side">
+        <a class="sibling" href="https://wangningashui-netizen.github.io/ai-prompts/" target="_blank" rel="noopener noreferrer">
+          <span class="sibling-kicker">图像提示词</span>
+          <span class="sibling-name">如水如画</span>
+        </a>
+        <label class="jump">
+          <span class="jump-label" id="jump-label">跳到</span>
+          <select id="jump" aria-labelledby="jump-label">
+            <option value="">选择日期</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="wrap">
+      <form class="toolbar-row" id="tools" role="search">
+        <div class="search">
+          <label class="sr" for="q">搜索标题、摘要或提示词</label>
+          <svg class="mag" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.25" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M16 16.5L20 20.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <input id="q" type="search" placeholder="搜索标题、摘要或提示词" autocomplete="off" enterkeyhint="search">
+          <button type="button" class="text-btn" id="clear" hidden>清除</button>
+        </div>
+        <div class="sort" role="radiogroup" aria-label="排序">
+          <button type="button" role="radio" id="sort-time" data-sort="time" aria-checked="true">时间</button>
+          <button type="button" role="radio" id="sort-heat" data-sort="heat" aria-checked="false">热度</button>
+        </div>
+      </form>
+      <div class="chips" id="chips" role="toolbar" aria-label="分类"></div>
+    </div>
+  </div>
+
+  <p class="result wrap" id="result" aria-live="polite"></p>
+  <main id="feed" class="wrap feed" tabindex="-1">
+    <noscript><p class="status">请启用 JavaScript 以浏览写作提示词。</p></noscript>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>内容来自 X 公开帖子，提示词版权归原作者。时间为北京时间（UTC+8）。</p>
+      <p class="foot-links">
+        <a href="https://wangningashui-netizen.github.io/ai-prompts/" target="_blank" rel="noopener noreferrer">如水如画 · 图像提示词</a>
+      </p>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" id="to-top" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 14.5L12 8.5l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

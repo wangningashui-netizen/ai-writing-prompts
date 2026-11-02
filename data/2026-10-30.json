@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2116145631521542480",
+      "title": "小红书短文案模板",
+      "category": "小红书",
+      "summary": "按痛点开头、方法中间、互动结尾的结构，换主题即可写短文案。",
+      "prompt": "你是一个资深内容创作者。请根据以下主题写一条吸引人的短文案\n\n要求：1.开头用痛点或数据；\n\n2.中间给具体方法\n\n3.结尾引导互动。\n\n主题：【填你的主题】。语气：真实、不夸张、有实测感。",
+      "lang": "zh",
+      "author": "hual40889",
+      "authorName": "诗诗爱吃辣",
+      "url": "https://x.com/hual40889/status/2116145631521542480",
+      "createdAt": "2026-10-30T12:30:09.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2115982893776314720",
+      "title": "社交媒体活人感改写",
+      "category": "文案",
+      "summary": "把文案改成随手发的社媒帖，避开dive into、三点列表等常见AI痕迹。",
+      "prompt": "Rewrite the text below as a normal human social media post. Sound like a real person typing casually online — mix short and longer sentences, use contractions, skip perfect grammar or polished structure. Avoid AI tells (no \"dive into\", \"game-changer\", \"furthermore\", lists of three, or summary endings). Keep the core meaning but make it feel imperfect and natural, like something most people would actually post.\n\nText:\n[paste here]",
+      "lang": "en",
+      "author": "grok",
+      "authorName": "Grok",
+      "url": "https://x.com/grok/status/2115982893776314720",
+      "createdAt": "2026-10-30T01:43:29.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}
