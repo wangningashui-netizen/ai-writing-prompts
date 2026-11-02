@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2114711507737219130",
+      "url": "https://x.com/xuejoker168/status/2114711507737219130",
+      "author": {
+        "name": "德豪的ai之路",
+        "username": "xuejoker168"
+      },
+      "createdAt": "2026-10-26T13:31:27.000Z",
+      "titleZh": "Humanizer：去除 AI 写作痕迹",
+      "summaryZh": "一个用来去除文本中 AI 生成痕迹的 Agent Skill，可把 AI 味重的稿子改得更像人写的。适合需要润色英文或通用文案的写作者。",
+      "category": "写作",
+      "postText": "自媒体人先收好这 9 个 Skill\n\n 做自媒体的几个关键环节——找资料、改文案、做图文，其实都能交给 Skill 自动化。我整理了 9 个自媒体相关的开源 Skill，全部带 GitHub 地址，自取 👇\n\n ① agent-reach｜资料收集 帮你自动去网上扒资料、做信息聚合，写稿前先把素材备齐。 https://t.co/iD0CEg3hKk\n\n ② xhs-visual-director｜图文规划 小红书图文怎么排、配什么图，先让它给你出整体规划。 https://t.co/D3YUFybFOd\n\n ③ humanizer｜文案润色 把 AI 味重的稿子改得更像人写的，去机器感。 https://t.co/XiIyE7aZrH\n\n ④ baoyu-format-markdown｜文章排版 一键把文章整理成干净的 Markdown 排版。 https://t.co/7bxgza8dju\n\n ⑤ baoyu-cover-image｜文章封面 自动生成文章封面图。 https://t.co/pl5ZE4f65M\n\n⑥ baoyu-article-illustrator｜正文配图 给文章正文自动配插图。 https://t.co/GjcAigJuIu\n\n ⑦ baoyu-xhs-images｜图文卡片 做小红书风格的图文卡片。 https://t.co/6lG2l2IMGj\n\n ⑧ baoyu-infographic｜信息图 把文字内容画成信息图，讲清楚逻辑。 https://t.co/IqMAdbiCQf\n\n ⑨ baoyu-post-to-wechat｜公众号发布 直接帮你把文章发到微信公众号。 https://t.co/WtOxxd1C9t\n\n9 个串起来刚好覆盖一条自媒体生产链：找资料 → 规划 → 润色 → 排版 → 封面 / 配图 / 卡片 / 信息图 → 发布。两点提醒：\n①链接是发文时的仓库地址，仓库可能改名或迁移，以 GitHub 实时为准；\n②这些我没法挨个本地实测，功能以官方说明为准，装之前看清楚权限和依赖。via @程序员小栈",
+      "repo": {
+        "fullName": "blader/humanizer",
+        "url": "https://github.com/blader/humanizer",
+        "description": "Agent skill that removes signs of AI-generated writing from text",
+        "stars": 63875,
+        "language": "Python",
+        "pushedAt": "2026-10-28T07:17:33Z"
+      },
+      "metrics": {
+        "likes": 0,
+        "reposts": 0,
+        "replies": 2,
+        "bookmarks": 1,
+        "quotes": 0,
+        "impressions": 173
+      },
+      "otherSourceIds": [
+        "2114978255203893450"
+      ]
+    },
+    {
+      "id": "2114691301153382833",
+      "url": "https://x.com/grgerwcwetwet/status/2114691301153382833",
+      "author": {
+        "name": "周览资源",
+        "username": "grgerwcwetwet"
+      },
+      "createdAt": "2026-10-26T12:11:09.000Z",
+      "titleZh": "营销技能合集 marketingskills",
+      "summaryZh": "面向 Claude Code 等 AI agent 的营销技能合集，覆盖转化优化、文案、SEO、数据分析和增长。适合做产品营销、写推广文案的人。",
+      "category": "内容创作",
+      "postText": "GitHub 上这 6 个 AI Skills，最高已经狂揽 5.6 万 Star！\n\n搞自媒体、做内容的建议收藏！从写文案、做 PPT、生成配图到内容分发，基本全包了。\n\n1、marketingskills（56.6K Star）\n营销神器，涵盖文案、SEO、转化优化、增长策略等技能。\nhttps://t.co/rZ5x9URHM6\n\n2、awesome-gpt-image-2（35K Star）\n530+ 个 AI 生图案例，20+ 套模板，做海报、封面、配图直接参考。\nhttps://t.co/DaibbI6CNY\n\n3、guizang-ppt-skill（28.7K Star）\n一句话生成高颜值 HTML 演示稿，杂志级排版、配图、动效都有。\nhttps://t.co/vSMKhDZ9Vi\n\n4、Humanizer-zh（21K Star）\n专治 AI 味太重，让机器生成的中文更自然、更像真人表达。\nhttps://t.co/o4LaPrwawC\n\n5、guizang-social-card-skill（7.8K Star）\n文字直接生成小红书轮播图、公众号封面，28 种布局、10 套主题。\nhttps://t.co/T3XI2fX5em\n\n6、anything-to-notebooklm（6.4K Star）\n网页、PDF、YouTube 视频等内容，一键交给 NotebookLM 生成播客、PPT、思维导图。\nhttps://t.co/SDqdKM2oUw",
+      "repo": {
+        "fullName": "coreyhaines31/marketingskills",
+        "url": "https://github.com/coreyhaines31/marketingskills",
+        "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+        "stars": 57989,
+        "language": "JavaScript",
+        "pushedAt": "2026-10-31T00:53:07Z"
+      },
+      "metrics": {
+        "likes": 216,
+        "reposts": 42,
+        "replies": 4,
+        "bookmarks": 265,
+        "quotes": 2,
+        "impressions": 16479
+      },
+      "otherSourceIds": [
+        "2116715347911049502",
+        "2117088079861211637"
+      ]
+    },
+    {
+      "id": "2114691301153382833",
+      "url": "https://x.com/grgerwcwetwet/status/2114691301153382833",
+      "author": {
+        "name": "周览资源",
+        "username": "grgerwcwetwet"
+      },
+      "createdAt": "2026-10-26T12:11:09.000Z",
+      "titleZh": "GPT Image 2 提示词案例库",
+      "summaryZh": "GPT Image 2 / 2.5 提示词与案例库，收录 530+ 个案例、20+ 套模板和可复用 Skills，附完整提示词。适合做海报、封面、配图找参考的人。",
+      "category": "内容创作",
+      "postText": "GitHub 上这 6 个 AI Skills，最高已经狂揽 5.6 万 Star！\n\n搞自媒体、做内容的建议收藏！从写文案、做 PPT、生成配图到内容分发，基本全包了。\n\n1、marketingskills（56.6K Star）\n营销神器，涵盖文案、SEO、转化优化、增长策略等技能。\nhttps://t.co/rZ5x9URHM6\n\n2、awesome-gpt-image-2（35K Star）\n530+ 个 AI 生图案例，20+ 套模板，做海报、封面、配图直接参考。\nhttps://t.co/DaibbI6CNY\n\n3、guizang-ppt-skill（28.7K Star）\n一句话生成高颜值 HTML 演示稿，杂志级排版、配图、动效都有。\nhttps://t.co/vSMKhDZ9Vi\n\n4、Humanizer-zh（21K Star）\n专治 AI 味太重，让机器生成的中文更自然、更像真人表达。\nhttps://t.co/o4LaPrwawC\n\n5、guizang-social-card-skill（7.8K Star）\n文字直接生成小红书轮播图、公众号封面，28 种布局、10 套主题。\nhttps://t.co/T3XI2fX5em\n\n6、anything-to-notebooklm（6.4K Star）\n网页、PDF、YouTube 视频等内容，一键交给 NotebookLM 生成播客、PPT、思维导图。\nhttps://t.co/SDqdKM2oUw",
+      "repo": {
+        "fullName": "freestylefly/awesome-gpt-image-2",
+        "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+        "description": "Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。",
+        "stars": 35379,
+        "language": "JavaScript",
+        "pushedAt": "2026-10-14T08:48:21Z"
+      },
+      "metrics": {
+        "likes": 216,
+        "reposts": 42,
+        "replies": 4,
+        "bookmarks": 265,
+        "quotes": 2,
+        "impressions": 16479
+      },
+      "otherSourceIds": [
+        "2116715347911049502"
+      ]
+    },
+    {
+      "id": "2114691301153382833",
+      "url": "https://x.com/grgerwcwetwet/status/2114691301153382833",
+      "author": {
+        "name": "周览资源",
+        "username": "grgerwcwetwet"
+      },
+      "createdAt": "2026-10-26T12:11:09.000Z",
+      "titleZh": "歸藏 PPT Skill",
+      "summaryZh": "一句话生成高颜值 HTML 演示稿的 Agent Skill，杂志风和瑞士风排版、配图提示词都有。适合要快速做分享稿、汇报的人。",
+      "category": "内容创作",
+      "postText": "GitHub 上这 6 个 AI Skills，最高已经狂揽 5.6 万 Star！\n\n搞自媒体、做内容的建议收藏！从写文案、做 PPT、生成配图到内容分发，基本全包了。\n\n1、marketingskills（56.6K Star）\n营销神器，涵盖文案、SEO、转化优化、增长策略等技能。\nhttps://t.co/rZ5x9URHM6\n\n2、awesome-gpt-image-2（35K Star）\n530+ 个 AI 生图案例，20+ 套模板，做海报、封面、配图直接参考。\nhttps://t.co/DaibbI6CNY\n\n3、guizang-ppt-skill（28.7K Star）\n一句话生成高颜值 HTML 演示稿，杂志级排版、配图、动效都有。\nhttps://t.co/vSMKhDZ9Vi\n\n4、Humanizer-zh（21K Star）\n专治 AI 味太重，让机器生成的中文更自然、更像真人表达。\nhttps://t.co/o4LaPrwawC\n\n5、guizang-social-card-skill（7.8K Star）\n文字直接生成小红书轮播图、公众号封面，28 种布局、10 套主题。\nhttps://t.co/T3XI2fX5em\n\n6、anything-to-notebooklm（6.4K Star）\n网页、PDF、YouTube 视频等内容，一键交给 NotebookLM 生成播客、PPT、思维导图。\nhttps://t.co/SDqdKM2oUw",
+      "repo": {
+        "fullName": "op7418/guizang-ppt-skill",
+        "url": "https://github.com/op7418/guizang-ppt-skill",
+        "description": "AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime.",
+        "stars": 29148,
+        "language": "HTML",
+        "pushedAt": "2026-10-30T12:45:28Z"
+      },
+      "metrics": {
+        "likes": 216,
+        "reposts": 42,
+        "replies": 4,
+        "bookmarks": 265,
+        "quotes": 2,
+        "impressions": 16479
+      },
+      "otherSourceIds": [
+        "2116715347911049502"
+      ]
+    },
+    {
+      "id": "2114691301153382833",
+      "url": "https://x.com/grgerwcwetwet/status/2114691301153382833",
+      "author": {
+        "name": "周览资源",
+        "username": "grgerwcwetwet"
+      },
+      "createdAt": "2026-10-26T12:11:09.000Z",
+      "titleZh": "Humanizer 中文版：去 AI 味",
+      "summaryZh": "Humanizer 的汉化版 Claude Code Skill，专门消除中文文本里的 AI 生成痕迹，让表达更自然、更像真人。适合写完初稿后再过一遍的内容作者。",
+      "category": "写作",
+      "postText": "GitHub 上这 6 个 AI Skills，最高已经狂揽 5.6 万 Star！\n\n搞自媒体、做内容的建议收藏！从写文案、做 PPT、生成配图到内容分发，基本全包了。\n\n1、marketingskills（56.6K Star）\n营销神器，涵盖文案、SEO、转化优化、增长策略等技能。\nhttps://t.co/rZ5x9URHM6\n\n2、awesome-gpt-image-2（35K Star）\n530+ 个 AI 生图案例，20+ 套模板，做海报、封面、配图直接参考。\nhttps://t.co/DaibbI6CNY\n\n3、guizang-ppt-skill（28.7K Star）\n一句话生成高颜值 HTML 演示稿，杂志级排版、配图、动效都有。\nhttps://t.co/vSMKhDZ9Vi\n\n4、Humanizer-zh（21K Star）\n专治 AI 味太重，让机器生成的中文更自然、更像真人表达。\nhttps://t.co/o4LaPrwawC\n\n5、guizang-social-card-skill（7.8K Star）\n文字直接生成小红书轮播图、公众号封面，28 种布局、10 套主题。\nhttps://t.co/T3XI2fX5em\n\n6、anything-to-notebooklm（6.4K Star）\n网页、PDF、YouTube 视频等内容，一键交给 NotebookLM 生成播客、PPT、思维导图。\nhttps://t.co/SDqdKM2oUw",
+      "repo": {
+        "fullName": "op7418/Humanizer-zh",
+        "url": "https://github.com/op7418/Humanizer-zh",
+        "description": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
+        "stars": 21770,
+        "language": "Python",
+        "pushedAt": "2026-09-23T02:24:28Z"
+      },
+      "metrics": {
+        "likes": 216,
+        "reposts": 42,
+        "replies": 4,
+        "bookmarks": 265,
+        "quotes": 2,
+        "impressions": 16479
+      },
+      "otherSourceIds": [
+        "2116715347911049502",
+        "2116197455897473159"
+      ]
+    },
+    {
+      "id": "2114691301153382833",
+      "url": "https://x.com/grgerwcwetwet/status/2114691301153382833",
+      "author": {
+        "name": "周览资源",
+        "username": "grgerwcwetwet"
+      },
+      "createdAt": "2026-10-26T12:11:09.000Z",
+      "titleZh": "万物转 NotebookLM",
+      "summaryZh": "把公众号文章、网页、YouTube、PDF 等多源内容处理后交给 NotebookLM，生成播客、PPT、思维导图等。适合用 NotebookLM 做学习和资料消化的人。",
+      "category": "研究",
+      "postText": "GitHub 上这 6 个 AI Skills，最高已经狂揽 5.6 万 Star！\n\n搞自媒体、做内容的建议收藏！从写文案、做 PPT、生成配图到内容分发，基本全包了。\n\n1、marketingskills（56.6K Star）\n营销神器，涵盖文案、SEO、转化优化、增长策略等技能。\nhttps://t.co/rZ5x9URHM6\n\n2、awesome-gpt-image-2（35K Star）\n530+ 个 AI 生图案例，20+ 套模板，做海报、封面、配图直接参考。\nhttps://t.co/DaibbI6CNY\n\n3、guizang-ppt-skill（28.7K Star）\n一句话生成高颜值 HTML 演示稿，杂志级排版、配图、动效都有。\nhttps://t.co/vSMKhDZ9Vi\n\n4、Humanizer-zh（21K Star）\n专治 AI 味太重，让机器生成的中文更自然、更像真人表达。\nhttps://t.co/o4LaPrwawC\n\n5、guizang-social-card-skill（7.8K Star）\n文字直接生成小红书轮播图、公众号封面，28 种布局、10 套主题。\nhttps://t.co/T3XI2fX5em\n\n6、anything-to-notebooklm（6.4K Star）\n网页、PDF、YouTube 视频等内容，一键交给 NotebookLM 生成播客、PPT、思维导图。\nhttps://t.co/SDqdKM2oUw",
+      "repo": {
+        "fullName": "joeseesun/qiaomu-anything-to-notebooklm",
+        "url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm",
+        "description": "Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz etc.",
+        "stars": 6457,
+        "language": "Python",
+        "pushedAt": "2026-10-22T16:49:15Z"
+      },
+      "metrics": {
+        "likes": 216,
+        "reposts": 42,
+        "replies": 4,
+        "bookmarks": 265,
+        "quotes": 2,
+        "impressions": 16479
+      },
+      "otherSourceIds": [
+        "2116715347911049502"
+      ]
+    },
+    {
+      "id": "2114598964402192705",
+      "url": "https://x.com/mrru5s3ll/status/2114598964402192705",
+      "author": {
+        "name": "MrRuSs3LL",
+        "username": "mrru5s3ll"
+      },
+      "createdAt": "2026-10-26T06:04:15.000Z",
+      "titleZh": "Stop Slop：揪出 AI 套话",
+      "summaryZh": "一个用来从散文中去除“AI 痕迹”的 skill 文件，专抓 AI 草稿里的套话和公式化结构。适合修改博客、README、发布说明等英文文案。",
+      "category": "写作",
+      "postText": "1/4 Found this cool project: Stop Slop is a writing skill for catching stock phrases and formulaic structures in AI drafts. Handy for editing README copy, blog posts or release notes.\nhttps://t.co/qy40zUY1KQ https://t.co/W2nJHzBjYo",
+      "repo": {
+        "fullName": "hardikpandya/stop-slop",
+        "url": "https://github.com/hardikpandya/stop-slop",
+        "description": "A skill file for removing AI tells from prose",
+        "stars": 18548,
+        "language": null,
+        "pushedAt": "2026-03-17T18:50:39Z"
+      },
+      "metrics": {
+        "likes": 0,
+        "reposts": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 39
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2114573489781064141",
+      "url": "https://x.com/AIExplorerTim/status/2114573489781064141",
+      "author": {
+        "name": "AI探路者Tim",
+        "username": "AIExplorerTim"
+      },
+      "createdAt": "2026-10-26T04:23:01.000Z",
+      "titleZh": "Opus 5.5 视频作品与提示词合集",
+      "summaryZh": "收集用 Claude Opus 5.5 做出的出彩视频，每条都附原帖和背后的提示词。适合想用代码/AI 做短视频、找灵感和可复制提示词的人。",
+      "category": "内容创作",
+      "postText": "别从零开始做下一个 Opus 5.5 视频。\n\n这 8 个 GitHub 仓库里有现成案例、能直接用的提示词和源码：\n\n1. awesome-opus5-5-videos（约 7.1K 星）\n收录了一批出彩的视频，每个都附了背后的提示词。\n`https://t.co/5CeA82jgak`\n\n2. lemo-opuscar（约 4.4K 星）\n一个用代码生成短片的 Claude Code 技能，内置 51 种风格可选。\n`https://t.co/nLUkaBSTW7`\n\n3. pdoom-video（约 3K 星）\n一个完整的卡拉 OK 音乐视频项目，本地渲染 4K60。\n`https://t.co/qbKj8F7XtR`\n\n4. PDoomVideo（约 2.3K 星）\n同一首歌的另一个音乐视频版本。可以拿它的代码和创意选择跟第 3 个对比着看。\n`https://t.co/MnskoUbnw0`\n\n5. mg-styles-15（约 1.4K 星）\n15 种动态图形风格，带成片、提示词和源码。\n`https://t.co/fH1ktAxGlO`\n\n6. ClaudeAnimationBase（约 1.3K 星）\n手绘卡通动画的起步模板，含 31 种角色表情。\n`https://t.co/gUIeUinj6u`\n\n7. awesome-claude-5-5-videos（约 560 星）\n带来源标注的视频工作流，其中有 301 个 Opus 专属示例。\n`https://t.co/WGjy93Mp9q`\n\n8. opus-video-prompts（约 510 星）\n中文视频案例，配了可直接复制的提示词。\n`https://t.co/6x978Or48B`\n\n挑一个你喜欢的风格，研究它怎么做的，然后做你自己的版本。",
+      "repo": {
+        "fullName": "yihui-dev/awesome-opus5-5-videos",
+        "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+        "description": "A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them. Watch each original next to a live remake on Skillry. Updated regularly.",
+        "stars": 13171,
+        "language": null,
+        "pushedAt": "2026-10-13T14:46:44Z"
+      },
+      "metrics": {
+        "likes": 495,
+        "reposts": 59,
+        "replies": 7,
+        "bookmarks": 692,
+        "quotes": 4,
+        "impressions": 31133
+      },
+      "otherSourceIds": [
+        "2114960802478535139"
+      ]
+    },
+    {
+      "id": "2114492248452682124",
+      "url": "https://x.com/gitrepos/status/2114492248452682124",
+      "author": {
+        "name": "Gitrepos",
+        "username": "gitrepos"
+      },
+      "createdAt": "2026-10-25T23:00:12.000Z",
+      "titleZh": "论文写作 Skills",
+      "summaryZh": "面向 ML/CV/NLP 论文写作的 Skill 包，整理改编自彭思达老师公开的写作笔记，可用于 Codex、Claude 等 agent。适合需要写学术论文的研究者和学生。",
+      "category": "研究",
+      "postText": "Research-Paper-Writing-Skills  ⭐ 7.8k\n\nA set of research paper writing skills for AI agents.\n\n🔗 https://t.co/LS32i54PWb\n\n#opensource https://t.co/OdGhpfLox3",
+      "repo": {
+        "fullName": "Master-cai/Research-Paper-Writing-Skills",
+        "url": "https://github.com/Master-cai/Research-Paper-Writing-Skills",
+        "description": "Skill package for ML/CV/NLP paper writing, curated and adapted from Prof. Peng Sida's open notes for Codex, Claude Code, and Gemini.",
+        "stars": 8014,
+        "language": null,
+        "pushedAt": "2026-06-23T02:28:54Z"
+      },
+      "metrics": {
+        "likes": 0,
+        "reposts": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 8
+      },
+      "otherSourceIds": []
+    }
+  ]
+}

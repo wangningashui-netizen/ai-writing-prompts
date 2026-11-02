@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2116855532728484304",
+      "url": "https://x.com/KanikaBK/status/2116855532728484304",
+      "author": {
+        "name": "Kanika",
+        "username": "KanikaBK"
+      },
+      "createdAt": "2026-11-01T11:31:02.000Z",
+      "titleZh": "Awesome Claude Skills（Composio）",
+      "summaryZh": "Composio 维护的 Claude Skills 精选清单，按文档、开发、数据等类别整理技能、资源和工具。适合想按类挑现成 skill 的人。",
+      "category": "通用合集",
+      "postText": "I went through some of GitHub repos on Claude skills so you don't have to.\n\nThese 5 are the only ones worth bookmarking:\n\n1. alirezarezvani/claude-skills\nhttps://t.co/FBh0lLQXh9\n\n2. anthropics/claude-code-skills (Official)\nhttps://t.co/TQrc59B0nh\n\n3. ComposioHQ/awesome-claude-skills\nhttps://t.co/FB8izMFzkC\n\n4. Claude-code-best-practice\nhttps://t.co/mBaWiHWbpM\n\n5. GitHub Topic: claude-code-skills\nhttps://t.co/891f0V4MTa",
+      "repo": {
+        "fullName": "ComposioHQ/awesome-claude-skills",
+        "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+        "stars": 78569,
+        "language": "Python",
+        "pushedAt": "2026-09-18T07:16:11Z"
+      },
+      "metrics": {
+        "likes": 18,
+        "reposts": 2,
+        "replies": 8,
+        "bookmarks": 17,
+        "quotes": 1,
+        "impressions": 1286
+      },
+      "otherSourceIds": [
+        "2115184819697013031",
+        "2116813947831742535",
+        "2115605358442139771",
+        "2114631842397569092"
+      ]
+    },
+    {
+      "id": "2116833376019890675",
+      "url": "https://x.com/xiaoanlab/status/2116833376019890675",
+      "author": {
+        "name": "XiaoAnLab",
+        "username": "xiaoanlab"
+      },
+      "createdAt": "2026-11-01T10:03:00.000Z",
+      "titleZh": "agentic-awesome-skills 大合集",
+      "summaryZh": "收录 2884+ 个可复用 AI agent skills 的合集，兼容 Claude Code、Codex、Cursor、Gemini CLI。适合给 agent 攒工具箱、想一处检索各类技能的人。",
+      "category": "通用合集",
+      "postText": "skill 散着找，装一个试一个全靠运气？\n\nagentic-awesome-skills 是 2884 个 skill 合集：Claude Code、Codex、Cursor、Gemini CLI 通吃。\n\n适合给 agent 攒工具箱的人。\n\n先装哪个方向，写代码还是调研？\n\n#Agent #Skill @grok\nhttps://t.co/Ubr4rNrqJl",
+      "repo": {
+        "fullName": "sickn33/agentic-awesome-skills",
+        "url": "https://github.com/sickn33/agentic-awesome-skills",
+        "description": "2,884+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.",
+        "stars": 49030,
+        "language": "Python",
+        "pushedAt": "2026-11-02T11:50:00Z"
+      },
+      "metrics": {
+        "likes": 7,
+        "reposts": 0,
+        "replies": 2,
+        "bookmarks": 1,
+        "quotes": 0,
+        "impressions": 247
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2116809467853676972",
+      "url": "https://x.com/bkdgiffug/status/2116809467853676972",
+      "author": {
+        "name": "lumxss",
+        "username": "bkdgiffug"
+      },
+      "createdAt": "2026-11-01T08:28:00.000Z",
+      "titleZh": "公文写作 Skill（躺平公文）",
+      "summaryZh": "用 102 万字真实公文语料统计提炼出的公文写作 Agent Skill，把公文风格变成可量化、可验收的标准，专治 AI 写材料套话多、结构过齐的“AI 味”。适合体制内写材料的人。",
+      "category": "写作",
+      "postText": "体制内写材料的人，可以重点看看 lieflat-gongwen 这个开源项目。\n\n常见 AI 写公文最大的毛病是“AI 味”太重：套话多、结构太齐，一看就不像真正写出来的材料。\n\n这个项目直接拿 102 万字真实公文做统计，把公文写作风格“蒸馏”成一套 Agent Skill\nhttps://t.co/D2sQUrFrdy https://t.co/yrVRludhCv",
+      "repo": {
+        "fullName": "larashero3-dotcom/lieflat-gongwen",
+        "url": "https://github.com/larashero3-dotcom/lieflat-gongwen",
+        "description": "通过102万字语料提炼的公文写作 skill，把公文写作风格变成可测量、可验收的量化数据",
+        "stars": 2177,
+        "language": "Python",
+        "pushedAt": "2026-11-02T03:03:44Z"
+      },
+      "metrics": {
+        "likes": 1717,
+        "reposts": 326,
+        "replies": 66,
+        "bookmarks": 1847,
+        "quotes": 7,
+        "impressions": 141307
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2116772271763427517",
+      "url": "https://x.com/aiedge_/status/2116772271763427517",
+      "author": {
+        "name": "AI Edge",
+        "username": "aiedge_"
+      },
+      "createdAt": "2026-11-01T06:00:11.000Z",
+      "titleZh": "Anthropic 官方 Skills 仓库",
+      "summaryZh": "Anthropic 官方的 Agent Skills 公共仓库，包含文档、PPT、表格、前端设计、创建 Skill 等示例技能。适合想从官方示例入门 Skills 的所有人。",
+      "category": "通用合集",
+      "postText": "🚨 Anthropic has a PUBLIC GitHub repo of 12+ Claude Skills for Opus 5.5\n\nSkills for frontend design, creating agentic skills, coding &amp; more.\n\n100% free.\n\n👉 https://t.co/qMVrDzKIto https://t.co/8FQELpYQcx",
+      "repo": {
+        "fullName": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "description": "Public repository for Agent Skills",
+        "stars": 186637,
+        "language": "Python",
+        "pushedAt": "2026-10-28T19:20:39Z"
+      },
+      "metrics": {
+        "likes": 95,
+        "reposts": 13,
+        "replies": 5,
+        "bookmarks": 186,
+        "quotes": 0,
+        "impressions": 12789
+      },
+      "otherSourceIds": [
+        "2116855532728484304",
+        "2115999922814402663",
+        "2115184819697013031",
+        "2117110692189012074",
+        "2116813947831742535",
+        "2116393343437639772",
+        "2114631842397569092",
+        "2116004446572572768"
+      ]
+    },
+    {
+      "id": "2116700727443882226",
+      "url": "https://x.com/DDJCXX/status/2116700727443882226",
+      "author": {
+        "name": "硅基废话",
+        "username": "DDJCXX"
+      },
+      "createdAt": "2026-11-01T01:15:54.000Z",
+      "titleZh": "花叔产品宣传片 Skill",
+      "summaryZh": "让 coding agent 一键直出产品宣传片：会写片子、配乐，不满意可以在画面上点一处只改那一处。适合想给产品做发布短片的人。",
+      "category": "内容创作",
+      "postText": "这个月 GitHub 上冒出来一批让 Claude Code 做视频、做动画的 Skill，挑了 8 个能直接用的，建议收藏：\n\n1.pixelfx（约 750 star）\n244 个像素特效，火、爆炸、魔法、天气，全是代码写的。附一个 Skill，让 Claude 像挑剔的像素画师一样做新特效：画、渲染、看、再改。\nhttps://t.co/fw5bTNAjzq\n\n2.huashu-motion（约 1900 star）\n说一句「给我的产品做个 30 秒发布片」，它自己写片子、配乐。哪里不满意，在画面上点一下，它只改那一处。\nhttps://t.co/SWh99G8CML\n\n3.mg-styles-15（约 2700 star）\n15 种 MG 动效风格，每种一支 10 秒成片，全是 Opus 5.5 写代码做的，提示词和源码都给了。\nhttps://t.co/WRBIThmpas\n\n4.motion-prompt（约 960 star）\n192 个动效、运镜、网页特效的叫法，每个配动态样例和提问写法。不知道那种效果叫什么、没法跟 AI 说的时候来这查，有简体中文版。\nhttps://t.co/eGrituL4H8\n\n5.animate（约 1200 star）\n纯代码做讲解短片和小故事，内置剪纸、钢笔排线、孔版印刷、像素等 7 种画风，也能照你给的参考图学一个新画风。\nhttps://t.co/hR0QJ0YwCp\n\n6.vibe-knowledge-film（约 830 star）\n做抖音上那种「Vibe 知识大赏」短片：丢一个选题或文案，它写字幕稿、排分镜、配音效，先出 30 秒样片，你点头了再做全片。\nhttps://t.co/VKF6D2gPHy\n\n7.story-studio（约 550 star）\n历史、人物故事口播，从选题、文案、配音、配图，一路做到能直接打开的剪映草稿。\nhttps://t.co/j4dgyAYY5T\n\n8.video-editor-skills（约 370 star）\n让 Claude Code 在达芬奇里给 vlog、口播粗剪：剪掉重来的片段和停顿，配 B-roll、配乐、字幕。要付费版达芬奇，不能商用。\nhttps://t.co/OX7MmHwqj4",
+      "repo": {
+        "fullName": "alchaincyf/huashu-motion",
+        "url": "https://github.com/alchaincyf/huashu-motion",
+        "description": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+        "stars": 2053,
+        "language": "JavaScript",
+        "pushedAt": "2026-10-22T12:19:37Z"
+      },
+      "metrics": {
+        "likes": 1969,
+        "reposts": 297,
+        "replies": 45,
+        "bookmarks": 2988,
+        "quotes": 14,
+        "impressions": 96553
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2116700727443882226",
+      "url": "https://x.com/DDJCXX/status/2116700727443882226",
+      "author": {
+        "name": "硅基废话",
+        "username": "DDJCXX"
+      },
+      "createdAt": "2026-11-01T01:15:54.000Z",
+      "titleZh": "动效提示词词典 motion-prompt",
+      "summaryZh": "整理了 192 个动效、运镜、网页特效的叫法，每个配动态样例和对 AI 的提问写法，有简体中文版。适合不知道某种效果叫什么、没法跟 AI 描述的人。",
+      "category": "内容创作",
+      "postText": "这个月 GitHub 上冒出来一批让 Claude Code 做视频、做动画的 Skill，挑了 8 个能直接用的，建议收藏：\n\n1.pixelfx（约 750 star）\n244 个像素特效，火、爆炸、魔法、天气，全是代码写的。附一个 Skill，让 Claude 像挑剔的像素画师一样做新特效：画、渲染、看、再改。\nhttps://t.co/fw5bTNAjzq\n\n2.huashu-motion（约 1900 star）\n说一句「给我的产品做个 30 秒发布片」，它自己写片子、配乐。哪里不满意，在画面上点一下，它只改那一处。\nhttps://t.co/SWh99G8CML\n\n3.mg-styles-15（约 2700 star）\n15 种 MG 动效风格，每种一支 10 秒成片，全是 Opus 5.5 写代码做的，提示词和源码都给了。\nhttps://t.co/WRBIThmpas\n\n4.motion-prompt（约 960 star）\n192 个动效、运镜、网页特效的叫法，每个配动态样例和提问写法。不知道那种效果叫什么、没法跟 AI 说的时候来这查，有简体中文版。\nhttps://t.co/eGrituL4H8\n\n5.animate（约 1200 star）\n纯代码做讲解短片和小故事，内置剪纸、钢笔排线、孔版印刷、像素等 7 种画风，也能照你给的参考图学一个新画风。\nhttps://t.co/hR0QJ0YwCp\n\n6.vibe-knowledge-film（约 830 star）\n做抖音上那种「Vibe 知识大赏」短片：丢一个选题或文案，它写字幕稿、排分镜、配音效，先出 30 秒样片，你点头了再做全片。\nhttps://t.co/VKF6D2gPHy\n\n7.story-studio（约 550 star）\n历史、人物故事口播，从选题、文案、配音、配图，一路做到能直接打开的剪映草稿。\nhttps://t.co/j4dgyAYY5T\n\n8.video-editor-skills（约 370 star）\n让 Claude Code 在达芬奇里给 vlog、口播粗剪：剪掉重来的片段和停顿，配 B-roll、配乐、字幕。要付费版达芬奇，不能商用。\nhttps://t.co/OX7MmHwqj4",
+      "repo": {
+        "fullName": "showheyohtaki/motion-prompt",
+        "url": "https://github.com/showheyohtaki/motion-prompt",
+        "description": "",
+        "stars": 1118,
+        "language": "JavaScript",
+        "pushedAt": "2026-10-29T12:52:08Z"
+      },
+      "metrics": {
+        "likes": 1969,
+        "reposts": 297,
+        "replies": 45,
+        "bookmarks": 2988,
+        "quotes": 14,
+        "impressions": 96553
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2116700727443882226",
+      "url": "https://x.com/DDJCXX/status/2116700727443882226",
+      "author": {
+        "name": "硅基废话",
+        "username": "DDJCXX"
+      },
+      "createdAt": "2026-11-01T01:15:54.000Z",
+      "titleZh": "故事口播短视频 Skill",
+      "summaryZh": "从选题、文案、配音、配图一路做到剪映草稿的一站式短视频创作 Agent Skill，帖子介绍主要用于历史、人物故事口播。适合做知识/故事类短视频的创作者。",
+      "category": "内容创作",
+      "postText": "这个月 GitHub 上冒出来一批让 Claude Code 做视频、做动画的 Skill，挑了 8 个能直接用的，建议收藏：\n\n1.pixelfx（约 750 star）\n244 个像素特效，火、爆炸、魔法、天气，全是代码写的。附一个 Skill，让 Claude 像挑剔的像素画师一样做新特效：画、渲染、看、再改。\nhttps://t.co/fw5bTNAjzq\n\n2.huashu-motion（约 1900 star）\n说一句「给我的产品做个 30 秒发布片」，它自己写片子、配乐。哪里不满意，在画面上点一下，它只改那一处。\nhttps://t.co/SWh99G8CML\n\n3.mg-styles-15（约 2700 star）\n15 种 MG 动效风格，每种一支 10 秒成片，全是 Opus 5.5 写代码做的，提示词和源码都给了。\nhttps://t.co/WRBIThmpas\n\n4.motion-prompt（约 960 star）\n192 个动效、运镜、网页特效的叫法，每个配动态样例和提问写法。不知道那种效果叫什么、没法跟 AI 说的时候来这查，有简体中文版。\nhttps://t.co/eGrituL4H8\n\n5.animate（约 1200 star）\n纯代码做讲解短片和小故事，内置剪纸、钢笔排线、孔版印刷、像素等 7 种画风，也能照你给的参考图学一个新画风。\nhttps://t.co/hR0QJ0YwCp\n\n6.vibe-knowledge-film（约 830 star）\n做抖音上那种「Vibe 知识大赏」短片：丢一个选题或文案，它写字幕稿、排分镜、配音效，先出 30 秒样片，你点头了再做全片。\nhttps://t.co/VKF6D2gPHy\n\n7.story-studio（约 550 star）\n历史、人物故事口播，从选题、文案、配音、配图，一路做到能直接打开的剪映草稿。\nhttps://t.co/j4dgyAYY5T\n\n8.video-editor-skills（约 370 star）\n让 Claude Code 在达芬奇里给 vlog、口播粗剪：剪掉重来的片段和停顿，配 B-roll、配乐、字幕。要付费版达芬奇，不能商用。\nhttps://t.co/OX7MmHwqj4",
+      "repo": {
+        "fullName": "konlu/story-studio",
+        "url": "https://github.com/konlu/story-studio",
+        "description": "从选题到剪映草稿的一站式 AI 短视频内容创作 Agent Skill",
+        "stars": 668,
+        "language": "Python",
+        "pushedAt": "2026-10-29T07:55:17Z"
+      },
+      "metrics": {
+        "likes": 1969,
+        "reposts": 297,
+        "replies": 45,
+        "bookmarks": 2988,
+        "quotes": 14,
+        "impressions": 96553
+      },
+      "otherSourceIds": []
+    }
+  ]
+}
