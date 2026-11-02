@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2117225359737262182",
+      "title": "国际邮件不编承诺",
+      "category": "邮件",
+      "summary": "用永久指令加事实条约束商务英文邮件，禁止AI擅自补日期、交付和承诺。",
+      "prompt": "你是国际合作商务邮件助手。\n规则：\n1. 只使用我提供的事实、人名、日期、时区、承诺；没有写的一律不要补。\n2. 不确定写成 [BRACKET]，不要猜。\n3. 语气礼貌、短句、无夸张、无营销腔。\n4. 我方时区写清 CST（China Standard Time）。\n5. 输出格式：先 Subject 一行，再正文。\n6. 禁止编造：附件已发、对方已同意、内部审批已过、具体报价。\n\n—— 每次写信用的事实条 ——\n请按永久指令写一封邮件。\n场景：[约第一次线上会 / 会后跟进 / 催材料 / 其他]\n收件人：[Name]，对方公司/角色一句话：[ ]\n我方身份一句话：[ ]（不要编组织细节）\n必须出现的事实：\n- 日期/时区：\n- 目的：\n- 我方能承诺的（只写我真会做的）：\n- 明确不要写的：\n语气参考：礼貌、可直接发出。",
+      "lang": "zh",
+      "author": "Jadeyangtq",
+      "authorName": "JYUnfallenAngel",
+      "url": "https://x.com/Jadeyangtq/status/2117225359737262182",
+      "createdAt": "2026-11-02T12:00:36.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2117052577825321102",
+      "title": "AI-Detection Safe Rewrite",
+      "category": "润色",
+      "summary": "人性化改写以降低AI感：变化句长、自然过渡，不加油水和不改信息。",
+      "prompt": "Humanize this text so it does not feel AI-generated. Vary sentence length, add natural phrasing, improve transitions, and make it feel organic and authentic without adding fluff or changing the message. Text: [paste text].",
+      "lang": "en",
+      "author": "Alora_Tech_Ai0",
+      "authorName": "Alora Ai",
+      "url": "https://x.com/Alora_Tech_Ai0/status/2117052577825321102",
+      "createdAt": "2026-11-02T00:34:02.000Z",
+      "likes": 6,
+      "bookmarks": 3
+    }
+  ]
+}

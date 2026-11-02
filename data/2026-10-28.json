@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2115458583727087753",
+      "title": "The Specifics Swap",
+      "category": "润色",
+      "summary": "把空泛句子换成数字、工具名或真实例子，不知道就提问不编造。",
+      "prompt": "Act as a sharp editor. Find every vague line in my text and replace it with a number, a tool name, or a real example. If you don't know the detail, ask me. Never make it up. My text: [paste]",
+      "lang": "en",
+      "author": "AIinPublic",
+      "authorName": "AI In Public",
+      "url": "https://x.com/AIinPublic/status/2115458583727087753",
+      "createdAt": "2026-10-28T15:00:04.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2115458583370605000",
+      "title": "The Fluff Cutter",
+      "category": "润色",
+      "summary": "把文稿砍掉约三分之一，只保留读者真正需要的信息。",
+      "prompt": "Act as a brutal editor. Cut my text by a third. Remove filler, repeats, and long intros. Keep only what the reader needs. My text: [paste]",
+      "lang": "en",
+      "author": "AIinPublic",
+      "authorName": "AI In Public",
+      "url": "https://x.com/AIinPublic/status/2115458583370605000",
+      "createdAt": "2026-10-28T15:00:04.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2115458582531747862",
+      "title": "The Rhythm Fixer",
+      "category": "润色",
+      "summary": "混搭长短句并砍掉重复短语，让AI草稿读起来像人写的。",
+      "prompt": "Act as an editor who fixes AI drafts. Rewrite my text so it flows like a person wrote it. Mix short and long sentences. Cut every repeated phrase. Same meaning. My text: [paste]",
+      "lang": "en",
+      "author": "AIinPublic",
+      "authorName": "AI In Public",
+      "url": "https://x.com/AIinPublic/status/2115458582531747862",
+      "createdAt": "2026-10-28T15:00:04.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}

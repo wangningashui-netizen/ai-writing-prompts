@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2115645719176700358",
+      "title": "视频脚本一鱼多吃",
+      "category": "内容矩阵",
+      "summary": "把YouTube脚本或字幕改写成线程、LinkedIn、Shorts钩子、newsletter等渠道。",
+      "prompt": "Take this YouTube video script/transcript and repurpose it into:\n• A Twitter/X thread\n• A LinkedIn post\n• 3 YouTube Shorts hooks\n• An email newsletter\n• A Pinterest description\n\nAlso suggest which platforms to prioritize based on my niche.",
+      "lang": "en",
+      "author": "NextGenAi5",
+      "authorName": "Kaizen 黒",
+      "url": "https://x.com/NextGenAi5/status/2115645719176700358",
+      "createdAt": "2026-10-29T03:23:40.000Z",
+      "likes": 1,
+      "bookmarks": 2
+    },
+    {
+      "id": "2115508795493236863",
+      "title": "定价文案十秒读懂",
+      "category": "文案",
+      "summary": "把定价说明改写到首次客户十秒内能看懂，减少困惑私信。",
+      "prompt": "Here's my pricing text: [paste]. Rewrite it so a first-time customer understands it in 10 seconds.",
+      "lang": "en",
+      "author": "maged_hampoop",
+      "authorName": "Maged Hammo",
+      "url": "https://x.com/maged_hampoop/status/2115508795493236863",
+      "createdAt": "2026-10-28T18:19:35.000Z",
+      "likes": 1,
+      "bookmarks": 0
+    },
+    {
+      "id": "2115474243387539657",
+      "title": "难懂邮件十二岁解释",
+      "category": "邮件",
+      "summary": "把账单或工作邮件讲成人话，并给出对方要什么、截止与回复建议。",
+      "prompt": "Explain this like I'm 12. What do they want from me, by when, and what should I reply?",
+      "lang": "en",
+      "author": "DaDDyWaRBuXx1",
+      "authorName": "Daddy WARbuXx",
+      "url": "https://x.com/DaDDyWaRBuXx1/status/2115474243387539657",
+      "createdAt": "2026-10-28T16:02:17.000Z",
+      "likes": 1,
+      "bookmarks": 0
+    }
+  ]
+}
