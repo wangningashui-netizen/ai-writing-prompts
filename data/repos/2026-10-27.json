@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2114874675797111000",
+      "url": "https://x.com/Stanllll6o/status/2114874675797111000",
+      "author": {
+        "name": "离岸工具包🎒",
+        "username": "Stanllll6o"
+      },
+      "createdAt": "2026-10-27T00:19:49.000Z",
+      "titleZh": "sepia：去 AI 腔写作 Skill",
+      "summaryZh": "兼容 Agent Skills 的去 AI 写作 Skill，帖子介绍其含三轮优化和 30 项人工清单，专治讲得太透、收尾太规整。适合想让文字更有人味的写作者。",
+      "category": "写作",
+      "postText": "以后你写的东西不再一眼 AI 腔，开口就是人味儿。\n\n发现开源项目 sepia：去 AI 腔 Skill，据说三轮优化+30 项人工清单，专治讲太透、收尾太规整。\n\n链接：https://t.co/Jo2ZaI64jd\n\n每天分享能帮你赚钱的 AI 工具，关注我不迷路\n\n#AI工具 #AI写作 https://t.co/3Nu6B9U0i2",
+      "repo": {
+        "fullName": "Nanako0129/sepia",
+        "url": "https://github.com/Nanako0129/sepia",
+        "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
+        "stars": 3583,
+        "language": "Python",
+        "pushedAt": "2026-11-01T09:50:27Z"
+      },
+      "metrics": {
+        "likes": 1,
+        "reposts": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 125
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2114808624052621391",
+      "url": "https://x.com/emilkowalski/status/2114808624052621391",
+      "author": {
+        "name": "Emil Kowalski",
+        "username": "emilkowalski"
+      },
+      "createdAt": "2026-10-26T19:57:21.000Z",
+      "titleZh": "Emil Kowalski 设计工程 Skills",
+      "summaryZh": "面向设计师和工程师的 Skills，作者 Emil Kowalski 把界面动效与设计直觉做成 agent skill，帖子称已获 5 万 star、270 万次下载。适合用 AI 做前端界面的人。",
+      "category": "开发",
+      "postText": "Just noticed my skills repo is at 50,000 stars and 2,7 million downloads, thanks!\n\nMore skills coming soon, you’ll like them. \n\nhttps://t.co/zEnLEjkvIp",
+      "repo": {
+        "fullName": "emilkowalski/skills",
+        "url": "https://github.com/emilkowalski/skills",
+        "description": "Skills for Designers and Engineers.",
+        "stars": 52920,
+        "language": "Markdown",
+        "pushedAt": "2026-11-02T09:21:52Z"
+      },
+      "metrics": {
+        "likes": 2008,
+        "reposts": 81,
+        "replies": 56,
+        "bookmarks": 1252,
+        "quotes": 8,
+        "impressions": 70559
+      },
+      "otherSourceIds": []
+    }
+  ]
+}
