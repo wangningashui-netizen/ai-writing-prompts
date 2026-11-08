@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-04",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2117963133759197302",
+      "title": "邮件改得清楚礼貌自信",
+      "category": "邮件",
+      "summary": "把邮件改写得清晰、礼貌、自信，限120词内且不添加原意之外的内容。",
+      "prompt": "Rewrite this email to sound clear, polite and confident. Keep it under 120 words. Don’t add anything I didn’t say: [paste email]",
+      "lang": "en",
+      "author": "CopyPastePrompt",
+      "authorName": "AIinPlainWords",
+      "url": "https://x.com/CopyPastePrompt/status/2117963133759197302",
+      "createdAt": "2026-11-04T12:52:15.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2117872466244866435",
+      "title": "发送前检查邮件语气",
+      "category": "邮件",
+      "summary": "发重要邮件前，让AI扮演不高兴的收件人，找出可能被误读或反驳之处。",
+      "prompt": "Read this as the recipient who is annoyed with me. What would they misread or push back on?",
+      "lang": "en",
+      "author": "BongJupite43260",
+      "authorName": "Bong Jupiter | AI & Tech",
+      "url": "https://x.com/BongJupite43260/status/2117872466244866435",
+      "createdAt": "2026-11-04T06:51:58.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2117738599969882273",
+      "title": "操作步骤改成新手版",
+      "category": "其他",
+      "summary": "把流程步骤改写给新手：列前置条件、一步一动作、解释术语、标出缺失并给清单。",
+      "prompt": "Rewrite these steps for a first-time user: [paste].\n\nKeep the meaning.\nList prerequisites before the first step.\nUse one action per numbered step.\nExplain unfamiliar terms.\nFlag anything missing instead of inventing it.\nAdd a final checklist.\n\nThen show which parts you changed and why.",
+      "lang": "en",
+      "author": "arnaud_azad",
+      "authorName": "azad arnaud",
+      "url": "https://x.com/arnaud_azad/status/2117738599969882273",
+      "createdAt": "2026-11-03T22:00:02.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}

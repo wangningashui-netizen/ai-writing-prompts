@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2119565890253357062",
+      "title": "仿写喜欢的文风",
+      "category": "其他",
+      "summary": "粘贴喜欢的文章，让AI拆解语气、结构和用词，之后复用这份风格描述。",
+      "prompt": "Describe its tone, structure and word choice so I can match it.",
+      "lang": "en",
+      "author": "KanBuilds",
+      "authorName": "Kan Decods",
+      "url": "https://x.com/KanBuilds/status/2119565890253357062",
+      "createdAt": "2026-11-08T23:01:02.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2119529262747140312",
+      "title": "周一周报：摘要加三要点",
+      "category": "其他",
+      "summary": "把一周邮件和要点压成一句话总结加进展/阻塞/下一步三条，适合周报。",
+      "prompt": "Write 1-sentence summary + 3 bullets: progress|blocker|next (owner,due). Subject:Weekly Status - {Project}. ≤120w",
+      "lang": "en",
+      "author": "robertcodesai",
+      "authorName": "Robert Codes AI🤖",
+      "url": "https://x.com/robertcodesai/status/2119529262747140312",
+      "createdAt": "2026-11-08T20:35:29.000Z",
+      "likes": 1,
+      "bookmarks": 0
+    },
+    {
+      "id": "2119489733923590347",
+      "title": "会后跟进邮件",
+      "category": "邮件",
+      "summary": "把会议要点整理成中文跟进邮件：说明来意、两条待办、保留日期、只问一个确认问题。",
+      "prompt": "把下面的要点整理成中文邮件。开头说明来意，正文列两条待办，保留原日期，结尾只问一个需要确认的问题。要点：[粘贴]。",
+      "lang": "zh",
+      "author": "buyuxuangpt",
+      "authorName": "奥特曼小店｜提示词卡片",
+      "url": "https://x.com/buyuxuangpt/status/2119489733923590347",
+      "createdAt": "2026-11-08T17:58:25.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}
