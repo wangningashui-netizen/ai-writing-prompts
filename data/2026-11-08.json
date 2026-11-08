@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-08",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2119377914278150241",
+      "title": "文本脱敏助手",
+      "category": "其他",
+      "summary": "把客户聊天、合同、表格里的人名金额等换成稳定占位符并给对照表，再交给其他AI处理。",
+      "prompt": "你是我的脱敏助手。根据我贴的原文，先别总结、别改写业务意思。输出：\n1）脱敏后的正文：把人名、公司名、手机号、邮箱、身份证号/工号、具体金额、地址、内部项目代号，分别换成稳定占位符（如 [客户A]、[公司B]、[金额1]）；同一实体全文用同一个占位符\n2）对照表：原文敏感项 → 占位符（只列被替换的，方便你事后还原）\n3）你拿不准、仍可能敏感的词：单独列出，标「待确认」\n规则：不删减原意，不编造原文没有的信息；不确定就标「？」，不要猜。输出的正文要能直接复制到下一个 AI。",
+      "lang": "zh",
+      "author": "FanAI1110",
+      "authorName": "肖恩",
+      "url": "https://x.com/FanAI1110/status/2119377914278150241",
+      "createdAt": "2026-11-08T10:34:05.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2119147333351026948",
+      "title": "长对话压缩续聊摘要",
+      "category": "其他",
+      "summary": "把整段聊天压缩成可粘贴到新对话的摘要，无缝接着聊。",
+      "prompt": "Summarize this entire chat from beginning to end with equal weight given to the oldest and newest topics. Be clear and concise. No fluff words or unnecessary details. I should be able to copy your clear summary into a new chat and continue the discussion as if it's this same exact chat.",
+      "lang": "en",
+      "author": "SmokeAwayyy",
+      "authorName": "Smoke-away",
+      "url": "https://x.com/SmokeAwayyy/status/2119147333351026948",
+      "createdAt": "2026-11-07T19:17:50.000Z",
+      "likes": 22,
+      "bookmarks": 18
+    }
+  ]
+}

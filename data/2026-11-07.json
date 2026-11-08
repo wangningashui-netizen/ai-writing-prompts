@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2119070311408885997",
+      "title": "用自己的口吻回邮件",
+      "category": "邮件",
+      "summary": "给AI三封有效邮件作样本，学你的语气和句长，再按同样口吻回复新邮件。",
+      "prompt": "Here are 3 emails I wrote that got replies. Study my tone, sentence length, and openings. Now draft a reply to [paste email] in that same voice, under 120 words.",
+      "lang": "en",
+      "author": "NeyronixAI",
+      "authorName": "Neyronix",
+      "url": "https://x.com/NeyronixAI/status/2119070311408885997",
+      "createdAt": "2026-11-07T14:11:47.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}
