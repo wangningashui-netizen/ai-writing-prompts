@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2115717640962605244",
+      "url": "https://x.com/kfukuda90/status/2115717640962605244",
+      "author": {
+        "name": "Michael",
+        "username": "kfukuda90"
+      },
+      "createdAt": "2026-10-29T08:09:28.000Z",
+      "titleZh": "ChatGPT 中文提示词合集",
+      "summaryZh": "ChatGPT 中文调教指南，按“充当 xx”分好各种使用场景，提示词复制即用（如自然不带翻译腔的英翻中）。适合刚开始学写提示词的中文用户。",
+      "category": "通用合集",
+      "postText": "让 AI 翻译，出来总是一股翻译腔？\n\nawesome-chatgpt-prompts-zh 是一份中文提示词合集，按\"充当 xx\"分好了场景，复制就能用。\n\n比如\"充当英翻中\"那条，提示词里就要求译文自然地道、别带翻译腔，把末尾的例句换成你的原文就行。\n\n仓库是 MIT 协议开源，免费。\n\n地址：https://t.co/x0rI64AVoT\n#github",
+      "repo": {
+        "fullName": "PlexPt/awesome-chatgpt-prompts-zh",
+        "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh",
+        "description": "ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。",
+        "stars": 64330,
+        "language": null,
+        "pushedAt": "2026-04-28T10:52:14Z"
+      },
+      "metrics": {
+        "likes": 1,
+        "reposts": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 54
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2115657637325144372",
+      "url": "https://x.com/Botwu7/status/2115657637325144372",
+      "author": {
+        "name": "随风（终身学习）",
+        "username": "Botwu7"
+      },
+      "createdAt": "2026-10-29T04:11:02.000Z",
+      "titleZh": "Anthropic 知识工作者插件",
+      "summaryZh": "Anthropic 官方的知识工作插件仓库，按销售、法务、财务、数据、市场、生产力等工种打包 skills、connectors 和命令，全是 Markdown + JSON 可自行改造。适合用 Claude 办公的知识工作者（需 Claude 订阅）。",
+      "category": "效率",
+      "postText": "Anthropic 官方出了一套东西，思路值得抄：别让一个 AI 什么都干，给它分工。\n仓库叫 knowledge-work-plugins，11 个插件，每个对应一个工种：销售、法务、财务、数据、产品、客服、市场、生产力……每个插件打包了对应工种的 skills、connectors 和 slash commands。\n仓库：https://t.co/uW8dtRwjo7\n装起来两行命令：\nclaude plugin marketplace add anthropics/knowledge-work-plugins\nclaude plugin install sales@knowledge-work-plugins\n装完 skill 自动触发，命令手动调用，比如 /sales:call-prep（销售会前准备）、/data:write-query（写查询）、/finance:reconciliation（对账）。\n真正值得抄的不是这 11 个插件本身，是它的做法：\n1.  分工写清楚：不是提示词写得长，而是把“谁干什么、按什么流程干”写成文件，AI 照着干。\n2.  全是 Markdown＋JSON，没有代码，不用搭 infra，fork 过来把自己公司的术语、流程、工具接进去就能用。\n3.  还有个 cowork-plugin-management 插件，专门帮你定制自己的插件。\n两句实话：插件本身免费开源（Apache-2.0，3.3 万 star），但得有 Claude 订阅才能用；而且这是给 Claude Cowork / Claude Code 的，不是 Dify 的，我分享出来是给用 Claude 的人抄作业。\n你会先给自己的 AI 分几个工种？还是继续让一个 AI 什么都干？",
+      "repo": {
+        "fullName": "anthropics/knowledge-work-plugins",
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+        "stars": 34445,
+        "language": "Python",
+        "pushedAt": "2026-11-02T07:26:44Z"
+      },
+      "metrics": {
+        "likes": 2,
+        "reposts": 0,
+        "replies": 2,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 44
+      },
+      "otherSourceIds": []
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2116197455897473159",
+      "url": "https://x.com/NIxinhai0/status/2116197455897473159",
+      "author": {
+        "name": "溺心海·Aven",
+        "username": "NIxinhai0"
+      },
+      "createdAt": "2026-10-30T15:56:05.000Z",
+      "titleZh": "Agent-Reach：跨平台找资料",
+      "summaryZh": "给 AI agent 补上读取和搜索全网的能力，覆盖 Twitter、Reddit、YouTube、B 站、小红书等，还能提取视频字幕。适合找对标、收集选题和素材的内容创作者。",
+      "category": "研究",
+      "postText": "真得给大家甩点干货了，收集的被调用数最多的skills给大家做下总结：\n\nAgent Reach：\nhttps://t.co/JHE4AO9K1D \n给 AI 补上跨平台找资料的能力，支持小红书、Twitter、YouTube、B站等，还能提取视频字幕。找对标账号、收集选题、整理视频里的干货时挺方便，少一点开十几个网页来回复制的狼狈。 \n\nlast30days-skill：\nhttps://t.co/1fpH6aEMXi \n专门研究一个话题最近 30 天的动态，把 Reddit、X、YouTube 等平台的讨论整理成带来源的总结。适合追热点、找选题、看用户最近在关心什么，避免写了一篇“最新趋势”，结果大家半年前就聊完了。  \n\nsocialcampaigns：\nhttps://t.co/TUNLpcSbuj 产品做好了，但不知道怎么发第一条宣传内容，可以看看这个。它会读取项目代码，梳理产品定位、研究竞品，再制定内容策略、生成社媒文案。对独立开发者和做产品运营的人比较实用。 写文案、做配图 \n\nHumanizer-zh：\nhttps://t.co/NnR9Pvr8ug \n专门处理中文文案里的AI 味，调整空泛的大词、模板化句式和过度整齐的表达。文章初稿写完后可以再过一遍，少一点赋能与重塑，读起来更像正常人在分享。\n\nAIEnhancer：\nhttps://t.co/9LvLleemGy \n做内容时经常会碰到：文案写好了，配图却差点意思。这个网站把 AI 生图、图片编辑、画质增强和放大放在了一起，也支持多种图像模型。找不到合适的图，或者手头图片清晰度不够，都可以在这里处理。  \n\nbaoyu-skills：\nhttps://t.co/i8KWGlN6VK \n一个比较全的内容创作工具包，文章配图、小红书图卡、封面制作、排版和发布都有对应的 Skill。适合经常做图文内容的人，把原本分散的几个步骤接起来，不用每做一步就换个工具重新折腾。 做方案、做汇报 \n\nrwconsultingppt：\nhttps://t.co/lzaQLinkCR \n把行业报告、会议纪要和零散资料整理成咨询风格的汇报 PPT。先梳理结论和论证，再生成页面，适合资料攒了一堆、却不知道从哪讲起的时候。默认以图片页为主，需要编辑的页面，可以搭配同仓库的转换 Skill 处理。  \n\nFloor Planner：\nhttps://t.co/jjSKn1Txu4 \n设计师们的空间布局光靠嘴说，确实很难让人脑补。输入房间尺寸、用途和风格，就能让 AI 生成户型方案，方便比较不同的布局思路。还提供平面图转 3D、图片转 DXF／DWG 等工具，做装修规划、空间提案时可以拿来找灵感、辅助沟通。 \n \nListenHubCLI：\nhttps://t.co/xVcApCF9S3 \n有些内容做成文档没人看，换成音频或讲解视频就更容易理解。这个工具能让 AI 通过命令行调用 ListenHub，生成播客、配音、讲解视频、幻灯片和图片等，适合把现有材料继续做成不同形式的内容。 网页操作&文件处理\n\nOpenCLI：\nhttps://t.co/BtcEim6d3e \n把网站操作变成 AI 可以调用的命令，还能复用浏览器里已有的登录状态。读取网页、搜索内容、提取数据，以及串联重复的网站操作，都可以用它来做。每天在几个网站之间反复点来点去的人，可以研究一下。  \n\niLovePDF：\nhttps://t.co/nHaPD82UyX \nPDF 工具箱老熟人，合并、拆分、压缩、转 Word、转图片、加页码等常见功能都有。交材料前发现文件太大，或者几份文档需要拼成一份，直接打开处理就行，属于平时不起眼、用到时很省事的网站。",
+      "repo": {
+        "fullName": "Panniantong/Agent-Reach",
+        "url": "https://github.com/Panniantong/Agent-Reach",
+        "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+        "stars": 107915,
+        "language": "Python",
+        "pushedAt": "2026-11-01T07:23:13Z"
+      },
+      "metrics": {
+        "likes": 25,
+        "reposts": 4,
+        "replies": 7,
+        "bookmarks": 23,
+        "quotes": 2,
+        "impressions": 1813
+      },
+      "otherSourceIds": [
+        "2114711507737219130",
+        "2116850814178275515",
+        "2117267658647490665"
+      ]
+    },
+    {
+      "id": "2116197455897473159",
+      "url": "https://x.com/NIxinhai0/status/2116197455897473159",
+      "author": {
+        "name": "溺心海·Aven",
+        "username": "NIxinhai0"
+      },
+      "createdAt": "2026-10-30T15:56:05.000Z",
+      "titleZh": "最近 30 天话题调研 Skill",
+      "summaryZh": "让 agent 调研任意话题在 Reddit、X、YouTube、HN 等平台最近 30 天的讨论，整理成带来源的总结。适合追热点、找选题、了解用户近期关注点。",
+      "category": "研究",
+      "postText": "真得给大家甩点干货了，收集的被调用数最多的skills给大家做下总结：\n\nAgent Reach：\nhttps://t.co/JHE4AO9K1D \n给 AI 补上跨平台找资料的能力，支持小红书、Twitter、YouTube、B站等，还能提取视频字幕。找对标账号、收集选题、整理视频里的干货时挺方便，少一点开十几个网页来回复制的狼狈。 \n\nlast30days-skill：\nhttps://t.co/1fpH6aEMXi \n专门研究一个话题最近 30 天的动态，把 Reddit、X、YouTube 等平台的讨论整理成带来源的总结。适合追热点、找选题、看用户最近在关心什么，避免写了一篇“最新趋势”，结果大家半年前就聊完了。  \n\nsocialcampaigns：\nhttps://t.co/TUNLpcSbuj 产品做好了，但不知道怎么发第一条宣传内容，可以看看这个。它会读取项目代码，梳理产品定位、研究竞品，再制定内容策略、生成社媒文案。对独立开发者和做产品运营的人比较实用。 写文案、做配图 \n\nHumanizer-zh：\nhttps://t.co/NnR9Pvr8ug \n专门处理中文文案里的AI 味，调整空泛的大词、模板化句式和过度整齐的表达。文章初稿写完后可以再过一遍，少一点赋能与重塑，读起来更像正常人在分享。\n\nAIEnhancer：\nhttps://t.co/9LvLleemGy \n做内容时经常会碰到：文案写好了，配图却差点意思。这个网站把 AI 生图、图片编辑、画质增强和放大放在了一起，也支持多种图像模型。找不到合适的图，或者手头图片清晰度不够，都可以在这里处理。  \n\nbaoyu-skills：\nhttps://t.co/i8KWGlN6VK \n一个比较全的内容创作工具包，文章配图、小红书图卡、封面制作、排版和发布都有对应的 Skill。适合经常做图文内容的人，把原本分散的几个步骤接起来，不用每做一步就换个工具重新折腾。 做方案、做汇报 \n\nrwconsultingppt：\nhttps://t.co/lzaQLinkCR \n把行业报告、会议纪要和零散资料整理成咨询风格的汇报 PPT。先梳理结论和论证，再生成页面，适合资料攒了一堆、却不知道从哪讲起的时候。默认以图片页为主，需要编辑的页面，可以搭配同仓库的转换 Skill 处理。  \n\nFloor Planner：\nhttps://t.co/jjSKn1Txu4 \n设计师们的空间布局光靠嘴说，确实很难让人脑补。输入房间尺寸、用途和风格，就能让 AI 生成户型方案，方便比较不同的布局思路。还提供平面图转 3D、图片转 DXF／DWG 等工具，做装修规划、空间提案时可以拿来找灵感、辅助沟通。 \n \nListenHubCLI：\nhttps://t.co/xVcApCF9S3 \n有些内容做成文档没人看，换成音频或讲解视频就更容易理解。这个工具能让 AI 通过命令行调用 ListenHub，生成播客、配音、讲解视频、幻灯片和图片等，适合把现有材料继续做成不同形式的内容。 网页操作&文件处理\n\nOpenCLI：\nhttps://t.co/BtcEim6d3e \n把网站操作变成 AI 可以调用的命令，还能复用浏览器里已有的登录状态。读取网页、搜索内容、提取数据，以及串联重复的网站操作，都可以用它来做。每天在几个网站之间反复点来点去的人，可以研究一下。  \n\niLovePDF：\nhttps://t.co/nHaPD82UyX \nPDF 工具箱老熟人，合并、拆分、压缩、转 Word、转图片、加页码等常见功能都有。交材料前发现文件太大，或者几份文档需要拼成一份，直接打开处理就行，属于平时不起眼、用到时很省事的网站。",
+      "repo": {
+        "fullName": "mvanhorn/last30days-skill",
+        "url": "https://github.com/mvanhorn/last30days-skill",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+        "stars": 66326,
+        "language": "Python",
+        "pushedAt": "2026-11-01T18:47:38Z"
+      },
+      "metrics": {
+        "likes": 25,
+        "reposts": 4,
+        "replies": 7,
+        "bookmarks": 23,
+        "quotes": 2,
+        "impressions": 1813
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2116197455897473159",
+      "url": "https://x.com/NIxinhai0/status/2116197455897473159",
+      "author": {
+        "name": "溺心海·Aven",
+        "username": "NIxinhai0"
+      },
+      "createdAt": "2026-10-30T15:56:05.000Z",
+      "titleZh": "宝玉内容创作 Skills",
+      "summaryZh": "较全的图文内容创作工具包，文章配图、小红书图卡、封面、信息图、Markdown 排版到公众号发布都有对应 Skill。适合经常做图文内容的创作者。",
+      "category": "内容创作",
+      "postText": "真得给大家甩点干货了，收集的被调用数最多的skills给大家做下总结：\n\nAgent Reach：\nhttps://t.co/JHE4AO9K1D \n给 AI 补上跨平台找资料的能力，支持小红书、Twitter、YouTube、B站等，还能提取视频字幕。找对标账号、收集选题、整理视频里的干货时挺方便，少一点开十几个网页来回复制的狼狈。 \n\nlast30days-skill：\nhttps://t.co/1fpH6aEMXi \n专门研究一个话题最近 30 天的动态，把 Reddit、X、YouTube 等平台的讨论整理成带来源的总结。适合追热点、找选题、看用户最近在关心什么，避免写了一篇“最新趋势”，结果大家半年前就聊完了。  \n\nsocialcampaigns：\nhttps://t.co/TUNLpcSbuj 产品做好了，但不知道怎么发第一条宣传内容，可以看看这个。它会读取项目代码，梳理产品定位、研究竞品，再制定内容策略、生成社媒文案。对独立开发者和做产品运营的人比较实用。 写文案、做配图 \n\nHumanizer-zh：\nhttps://t.co/NnR9Pvr8ug \n专门处理中文文案里的AI 味，调整空泛的大词、模板化句式和过度整齐的表达。文章初稿写完后可以再过一遍，少一点赋能与重塑，读起来更像正常人在分享。\n\nAIEnhancer：\nhttps://t.co/9LvLleemGy \n做内容时经常会碰到：文案写好了，配图却差点意思。这个网站把 AI 生图、图片编辑、画质增强和放大放在了一起，也支持多种图像模型。找不到合适的图，或者手头图片清晰度不够，都可以在这里处理。  \n\nbaoyu-skills：\nhttps://t.co/i8KWGlN6VK \n一个比较全的内容创作工具包，文章配图、小红书图卡、封面制作、排版和发布都有对应的 Skill。适合经常做图文内容的人，把原本分散的几个步骤接起来，不用每做一步就换个工具重新折腾。 做方案、做汇报 \n\nrwconsultingppt：\nhttps://t.co/lzaQLinkCR \n把行业报告、会议纪要和零散资料整理成咨询风格的汇报 PPT。先梳理结论和论证，再生成页面，适合资料攒了一堆、却不知道从哪讲起的时候。默认以图片页为主，需要编辑的页面，可以搭配同仓库的转换 Skill 处理。  \n\nFloor Planner：\nhttps://t.co/jjSKn1Txu4 \n设计师们的空间布局光靠嘴说，确实很难让人脑补。输入房间尺寸、用途和风格，就能让 AI 生成户型方案，方便比较不同的布局思路。还提供平面图转 3D、图片转 DXF／DWG 等工具，做装修规划、空间提案时可以拿来找灵感、辅助沟通。 \n \nListenHubCLI：\nhttps://t.co/xVcApCF9S3 \n有些内容做成文档没人看，换成音频或讲解视频就更容易理解。这个工具能让 AI 通过命令行调用 ListenHub，生成播客、配音、讲解视频、幻灯片和图片等，适合把现有材料继续做成不同形式的内容。 网页操作&文件处理\n\nOpenCLI：\nhttps://t.co/BtcEim6d3e \n把网站操作变成 AI 可以调用的命令，还能复用浏览器里已有的登录状态。读取网页、搜索内容、提取数据，以及串联重复的网站操作，都可以用它来做。每天在几个网站之间反复点来点去的人，可以研究一下。  \n\niLovePDF：\nhttps://t.co/nHaPD82UyX \nPDF 工具箱老熟人，合并、拆分、压缩、转 Word、转图片、加页码等常见功能都有。交材料前发现文件太大，或者几份文档需要拼成一份，直接打开处理就行，属于平时不起眼、用到时很省事的网站。",
+      "repo": {
+        "fullName": "JimLiu/baoyu-skills",
+        "url": "https://github.com/JimLiu/baoyu-skills",
+        "description": "",
+        "stars": 27199,
+        "language": "TypeScript",
+        "pushedAt": "2026-11-01T23:35:35Z"
+      },
+      "metrics": {
+        "likes": 25,
+        "reposts": 4,
+        "replies": 7,
+        "bookmarks": 23,
+        "quotes": 2,
+        "impressions": 1813
+      },
+      "otherSourceIds": [
+        "2114711507737219130",
+        "2116850814178275515",
+        "2117267658647490665"
+      ]
+    },
+    {
+      "id": "2116027180509725014",
+      "url": "https://x.com/pandeyparul/status/2116027180509725014",
+      "author": {
+        "name": "Parul Pandey",
+        "username": "pandeyparul"
+      },
+      "createdAt": "2026-10-30T04:39:28.000Z",
+      "titleZh": "平实写作 Skill（带修订视图）",
+      "summaryZh": "面向 AI agent 的平实语言写作 Skill，自带修订视图，能清楚看到 agent 改了哪里、怎么清理文字。适合批量整理 AI 生成文本的人。",
+      "category": "写作",
+      "postText": "This is very useful for de-slopping bulk AI-generated text. I also find @sh_reya’s plain-writing skill extremely useful, especially because it includes a revision view. You can easily see what the agent changed and how it cleaned up the text.\nhttps://t.co/nx4GtAJEpZ",
+      "repo": {
+        "fullName": "docwriter-org/plain-writing-skill",
+        "url": "https://github.com/docwriter-org/plain-writing-skill",
+        "description": "A plain-language writing skill for AI agents, with a revision view that shows what changed.",
+        "stars": 741,
+        "language": "Python",
+        "pushedAt": "2026-08-23T20:26:54Z"
+      },
+      "metrics": {
+        "likes": 23,
+        "reposts": 2,
+        "replies": 2,
+        "bookmarks": 36,
+        "quotes": 0,
+        "impressions": 2410
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2115999922814402663",
+      "url": "https://x.com/anya_yfa7/status/2115999922814402663",
+      "author": {
+        "name": "anya",
+        "username": "anya_yfa7"
+      },
+      "createdAt": "2026-10-30T02:51:09.000Z",
+      "titleZh": "Superpowers 开发方法论 Skills",
+      "summaryZh": "一套 agentic skills 框架和软件开发方法论，让 agent 按“澄清需求—设计—拆解—测试—审查”的工程化流程干活。适合天天用 Claude Code / Codex 写代码的人。",
+      "category": "开发",
+      "postText": "Top 10 Claude Code skill repos worth exploring\n\nWant to make Claude Code better at coding, debugging, research and UI design?\n\nSave these repositories:\n\n1. Superpowers : https://t.co/fUcWzapMJs\n2. Matt Pocock Skills : https://t.co/NzTWLOx054\n3. Karpathy Skills : https://t.co/Nv10r8thwv\n4. Anthropic Skills : https://t.co/8qLJH0eGPQ\n5. Ponytail : https://t.co/JuioO1l1KS\n6. UI UX Pro Max : https://t.co/ljllqXviMt\n7. Graphify : https://t.co/QAWBlymnlp\n8. Caveman : https://t.co/g0jZFSGMcO\n9. Addy Osmani Agent Skills: https://t.co/G8CmWMym7K\n10. Taste Skill : https://t.co/pfvFX8BQzZ\n\nBookmark this list for your next project",
+      "repo": {
+        "fullName": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "description": "An agentic skills framework & software development methodology that works.",
+        "stars": 311024,
+        "language": "Shell",
+        "pushedAt": "2026-10-29T23:35:34Z"
+      },
+      "metrics": {
+        "likes": 19,
+        "reposts": 3,
+        "replies": 11,
+        "bookmarks": 13,
+        "quotes": 0,
+        "impressions": 1043
+      },
+      "otherSourceIds": [
+        "2115184819697013031",
+        "2117110692189012074",
+        "2116813947831742535",
+        "2116393343437639772",
+        "2114631842397569092",
+        "2116004446572572768"
+      ]
+    },
+    {
+      "id": "2115989266824368326",
+      "url": "https://x.com/shanyanggm/status/2115989266824368326",
+      "author": {
+        "name": "山羊赚钱笔记",
+        "username": "shanyanggm"
+      },
+      "createdAt": "2026-10-30T02:08:49.000Z",
+      "titleZh": "歸藏社媒卡片 Skill",
+      "summaryZh": "用于 Claude Code / Codex 的 Skill，把文章、笔记整理成小红书轮播图和公众号封面，提供 Editorial 与 Swiss 两套视觉系统。适合需要做组图、知识卡片的人。",
+      "category": "内容创作",
+      "postText": "小红书全套运营 Skill🫨🫨🫨🫨🫨🫨🫨🫨🫨🫨🫨🫨\n\n1 | 选题策略\nSkill 名称：content-strategist\n功能：把平台规则翻成可执行清单，帮助你理顺选题方向与内容优先级。\n适合人群：不会规划内容、想做账号定位的人。\n核心亮点：关键词前置、标题长度控制、A/B 备选思路。\nGitHub：https://t.co/mDax23SXtk\n\n2 | 数据诊断\nSkill 名称：dbskill\n功能：给选题和标题做体检，分析哪里不吸引人、哪里有 AI 味。\n适合人群：标题没感觉、点击率不稳定的人。\n核心亮点：诊断清单、爆款标题公式、直观定位问题。\nGitHub：https://t.co/1GxhHyp3Zn\n\n3 | 文案生成\nSkill 名称：xhs-writer-skill\n功能：从卖点分析到正文、标题、标签，输出完整小红书笔记。\n适合人群：想快速出稿、不想从零开写的人。\n核心亮点：爆款拆解、卖点抽取、可直接发的成稿结构。\nGitHub：https://t.co/6RX4LJPQEQ\n\n4 | 热点联动\nSkill 名称：writer + trending\n功能：把写作能力与热点捕捉结合，让日更更容易蹭上热度。\n适合人群：更新频率高、盯热搜词、需要日更灵感的人。\n核心亮点：热点切入 + 爆款结构，少在工具间来回切。\nGitHub：https://t.co/xBwjDdsgwB\n\n5 | 封面配图\nSkill 名称：space-image-studio\n功能：通过一句话生成小红书封面或配图，快速制作风格化图片。\n适合人群：不擅长设计、想快速出图的人。\n核心亮点：4 类类型 × 12 种风格，适合封面和配图实验。\nGitHub：https://t.co/ZCoHVmZAq0\n\n6 | 图文卡片\nSkill 名称：guizang-social-card-skill\n功能：把文章、截图、笔记整理成套图文卡片与封面。\n适合人群：需要制作组图、教程图、知识卡片的人。\n核心亮点：Editorial / Swiss 两套视觉系统，版式更成熟。\nGitHub：https://t.co/yyEHbh6eg7\n\n7 | 排版分发\nSkill 名称：html-anything\n功能：把 Markdown、表格、笔记转换成单文件 HTML，方便多平台发布。\n适合人群：长文作者，以及需要在公众号、知乎、小红书同步分发的人。\n核心亮点：无需 API Key、快速生成页面、排版友好。\nGitHub：https://t.co/9yk6rLJNdP\n\n8 | 全链路工作流\nSkill 名称：xhs-ai-workflow\n功能：从调研起草、配图到发布，串起完整小红书流程。\n适合人群：想优化工作流程、实现内容生产系统化的人。\n核心亮点：完整的 AI 协作流程，适合长期内容运营。\nGitHub：https://t.co/L3ekgRtmXV",
+      "repo": {
+        "fullName": "op7418/guizang-social-card-skill",
+        "url": "https://github.com/op7418/guizang-social-card-skill",
+        "description": "🪧 Claude Code / Codex skill — generate Xiaohongshu carousels & WeChat 21:9+1:1 cover pairs. Editorial × Swiss visual systems, 28 layouts, 10 themes, single-file HTML → PNG. 小红书图文 + 公众号封面对",
+        "stars": 7928,
+        "language": "HTML",
+        "pushedAt": "2026-10-30T12:48:55Z"
+      },
+      "metrics": {
+        "likes": 2814,
+        "reposts": 425,
+        "replies": 87,
+        "bookmarks": 3033,
+        "quotes": 25,
+        "impressions": 141688
+      },
+      "otherSourceIds": [
+        "2114691301153382833",
+        "2116715347911049502",
+        "2117267658647490665"
+      ]
+    },
+    {
+      "id": "2115989266824368326",
+      "url": "https://x.com/shanyanggm/status/2115989266824368326",
+      "author": {
+        "name": "山羊赚钱笔记",
+        "username": "shanyanggm"
+      },
+      "createdAt": "2026-10-30T02:08:49.000Z",
+      "titleZh": "小红书笔记生成 Skill",
+      "summaryZh": "基于 gpt-image-2 的小红书笔记生成器，从卖点分析到正文、标题、标签输出完整笔记，可用自然语言修改。适合想快速出稿的小红书作者。",
+      "category": "内容创作",
+      "postText": "小红书全套运营 Skill🫨🫨🫨🫨🫨🫨🫨🫨🫨🫨🫨🫨\n\n1 | 选题策略\nSkill 名称：content-strategist\n功能：把平台规则翻成可执行清单，帮助你理顺选题方向与内容优先级。\n适合人群：不会规划内容、想做账号定位的人。\n核心亮点：关键词前置、标题长度控制、A/B 备选思路。\nGitHub：https://t.co/mDax23SXtk\n\n2 | 数据诊断\nSkill 名称：dbskill\n功能：给选题和标题做体检，分析哪里不吸引人、哪里有 AI 味。\n适合人群：标题没感觉、点击率不稳定的人。\n核心亮点：诊断清单、爆款标题公式、直观定位问题。\nGitHub：https://t.co/1GxhHyp3Zn\n\n3 | 文案生成\nSkill 名称：xhs-writer-skill\n功能：从卖点分析到正文、标题、标签，输出完整小红书笔记。\n适合人群：想快速出稿、不想从零开写的人。\n核心亮点：爆款拆解、卖点抽取、可直接发的成稿结构。\nGitHub：https://t.co/6RX4LJPQEQ\n\n4 | 热点联动\nSkill 名称：writer + trending\n功能：把写作能力与热点捕捉结合，让日更更容易蹭上热度。\n适合人群：更新频率高、盯热搜词、需要日更灵感的人。\n核心亮点：热点切入 + 爆款结构，少在工具间来回切。\nGitHub：https://t.co/xBwjDdsgwB\n\n5 | 封面配图\nSkill 名称：space-image-studio\n功能：通过一句话生成小红书封面或配图，快速制作风格化图片。\n适合人群：不擅长设计、想快速出图的人。\n核心亮点：4 类类型 × 12 种风格，适合封面和配图实验。\nGitHub：https://t.co/ZCoHVmZAq0\n\n6 | 图文卡片\nSkill 名称：guizang-social-card-skill\n功能：把文章、截图、笔记整理成套图文卡片与封面。\n适合人群：需要制作组图、教程图、知识卡片的人。\n核心亮点：Editorial / Swiss 两套视觉系统，版式更成熟。\nGitHub：https://t.co/yyEHbh6eg7\n\n7 | 排版分发\nSkill 名称：html-anything\n功能：把 Markdown、表格、笔记转换成单文件 HTML，方便多平台发布。\n适合人群：长文作者，以及需要在公众号、知乎、小红书同步分发的人。\n核心亮点：无需 API Key、快速生成页面、排版友好。\nGitHub：https://t.co/9yk6rLJNdP\n\n8 | 全链路工作流\nSkill 名称：xhs-ai-workflow\n功能：从调研起草、配图到发布，串起完整小红书流程。\n适合人群：想优化工作流程、实现内容生产系统化的人。\n核心亮点：完整的 AI 协作流程，适合长期内容运营。\nGitHub：https://t.co/L3ekgRtmXV",
+      "repo": {
+        "fullName": "JuneYaooo/xhs-writer-skill",
+        "url": "https://github.com/JuneYaooo/xhs-writer-skill",
+        "description": "小红书爆款笔记生成器，基于gpt-image-2，强力超快生成，自然语言修改，超好用！",
+        "stars": 184,
+        "language": "Python",
+        "pushedAt": "2026-04-25T11:13:17Z"
+      },
+      "metrics": {
+        "likes": 2814,
+        "reposts": 425,
+        "replies": 87,
+        "bookmarks": 3033,
+        "quotes": 25,
+        "impressions": 141688
+      },
+      "otherSourceIds": []
+    }
+  ]
+}
