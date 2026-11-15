@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2122007406398034196",
+      "title": "压缩三成并标出可跳过的句子",
+      "category": "润色",
+      "summary": "把文本缩短约三成并保留全部事实，标出忙碌读者会跳过的句子，只给出压缩后的版本。",
+      "prompt": "Rewrite this to be 30% shorter, keep every fact, and flag any sentence a busy reader would skip. Then give me the tightened version only.",
+      "lang": "en",
+      "author": "NeyronixAI",
+      "authorName": "Neyronix",
+      "url": "https://x.com/NeyronixAI/status/2122007406398034196",
+      "createdAt": "2026-11-15T16:42:45.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}

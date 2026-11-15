@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2120212064874758360",
+      "title": "LinkedIn帖文带钩子和行动号召",
+      "category": "内容矩阵",
+      "summary": "把一个想法写成带强钩子、短段落、简单语言和明确行动号召的LinkedIn帖文。",
+      "prompt": "Act as a LinkedIn content writer, turn my idea into an engaging post with a strong hook, short paragraphs, simple language, and a clear CTA.",
+      "lang": "en",
+      "author": "reed45068",
+      "authorName": "Mason Reed",
+      "url": "https://x.com/reed45068/status/2120212064874758360",
+      "createdAt": "2026-11-10T17:48:42.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}
