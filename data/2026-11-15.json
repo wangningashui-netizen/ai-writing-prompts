@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2121933481445842961",
+      "title": "邮件改到八十字内且要求明确",
+      "category": "邮件",
+      "summary": "把邮件改写成简洁、专业、要求明确且不超过八十字，去掉套话。",
+      "prompt": "Rewrite this email to be concise, professional, clear ask, under 80 words. No filler: [paste].",
+      "lang": "en",
+      "author": "arronnes",
+      "authorName": "iamAaruna",
+      "url": "https://x.com/arronnes/status/2121933481445842961",
+      "createdAt": "2026-11-15T11:49:00.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2121927256792510520",
+      "title": "写作学习与工作总结三则",
+      "category": "其他",
+      "summary": "三条可复用提示：优化文字表达、用例子讲解知识点、把工作内容整理成成果、问题与下一步。",
+      "prompt": "1️⃣ 写作助手\n\n请你作为一名专业写作顾问，帮我优化下面这段文字，让表达更自然、清晰、有吸引力。\n\n2️⃣ 学习助手\n\n请你作为一名耐心的老师，用简单易懂的语言解释这个知识点，并举3个实际例子。\n\n3️⃣ 工作助手\n\n请帮我把下面的工作内容整理成一份清晰的工作总结，分为工作成果、存在问题和下一步计划。",
+      "lang": "zh",
+      "author": "liqunchen5",
+      "authorName": "AI 智能小铺",
+      "url": "https://x.com/liqunchen5/status/2121927256792510520",
+      "createdAt": "2026-11-15T11:24:16.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2121915795521593565",
+      "title": "针对岗位的ATS简历改写",
+      "category": "其他",
+      "summary": "以资深招聘和ATS专家身份，按目标岗位改写简历，强调可衡量成果，且不得编造经历。",
+      "prompt": "Act as a senior FAANG recruiter and ATS resume expert. Create a professional, ATS-friendly resume tailored to my target job role. Use strong action verbs, relevant keywords, measurable achievements, and clean formatting. Avoid generic buzzwords and never invent experience or metrics.",
+      "lang": "en",
+      "author": "itsmeriyapal",
+      "authorName": "Riya Pal",
+      "url": "https://x.com/itsmeriyapal/status/2121915795521593565",
+      "createdAt": "2026-11-15T10:38:43.000Z",
+      "likes": 10,
+      "bookmarks": 7
+    },
+    {
+      "id": "2121651771970035984",
+      "title": "改成跟朋友说话的口吻",
+      "category": "润色",
+      "summary": "用短句、不堆砌辞藻的方式改写，听起来像在跟朋友说话，并保持全部事实不变。",
+      "prompt": "Rewrite this so it sounds like me talking to a friend. Short sentences. No fancy words. Keep every fact the same.",
+      "lang": "en",
+      "author": "AIMadeUseful_",
+      "authorName": "AI Made Useful",
+      "url": "https://x.com/AIMadeUseful_/status/2121651771970035984",
+      "createdAt": "2026-11-14T17:09:35.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}
