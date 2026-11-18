@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2117101947928870969",
+      "url": "https://x.com/Daviswh/status/2117101947928870969",
+      "author": {
+        "name": "daviswu",
+        "username": "Daviswh"
+      },
+      "createdAt": "2026-11-02T03:50:12.000Z",
+      "titleZh": "中文小说创作 Skill",
+      "summaryZh": "AI 写中文长篇的流水线 Skill：从题材、人物、大纲到逐章写作与埋钩子，支持创作记忆和中断续写，可生成 10–50 章小说。适合打算连载网文的人。",
+      "category": "写作",
+      "postText": "想用 AI 写中文长篇、又怕写到中段人物崩、伏笔忘的人：可先看流水线 Skill。\n\n@0xGky：开源 chinese-novelist-skill（约 3.4K★），从题材/人物/大纲到逐章写作、衔接与埋钩，支持创作记忆、中断续写与多 Agent 并行；每章目标约 3000–5000 字。GitHub：https://t.co/ETzASqUR8x\n\n判断：准备连更 10 章以上的人适合装；别指望一次吐完 50 章不审——每章先定小目标与收尾钩子，再放权给 Skill。",
+      "repo": {
+        "fullName": "PenglongHuang/chinese-novelist-skill",
+        "url": "https://github.com/PenglongHuang/chinese-novelist-skill",
+        "description": "🎭 AI 写小说：从零生成 10-50 章完整中文小说，三层问答 · 创作记忆 · 悬念钩子 · 自动校验，长篇网文连载皆宜｜开源免费，适配主流 coding agent｜🤝 Infistar.cc 赞助 · 注册送 $5｜AI novel writing skill",
+        "stars": 4571,
+        "language": "JavaScript",
+        "pushedAt": "2026-11-01T13:40:52Z"
+      },
+      "metrics": {
+        "likes": 1,
+        "reposts": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 182
+      },
+      "otherSourceIds": []
+    },
+    {
+      "id": "2117064303463514377",
+      "url": "https://x.com/PandaRiseUp/status/2117064303463514377",
+      "author": {
+        "name": "奔放的熊貓",
+        "username": "PandaRiseUp"
+      },
+      "createdAt": "2026-11-02T01:20:37.000Z",
+      "titleZh": "AI 短剧创作 Skills",
+      "summaryZh": "开源 AI 短剧/漫剧创作 skill 合集：原著分析、分集剧本、角色资产、分镜、图/视频提示词与审查，适配 Claude Code 与 Codex。适合想把小说改编成 AI 短剧的人。",
+      "category": "内容创作",
+      "postText": "丢给 Claude Code / Codex 一部小说，它能直接做成 AI 短剧👇\n\n开源 drama-skills，11 个技能串起：原著分析→分集剧本→分镜→图/视频提示词→剪辑成片\n\n· 官方样片：20 章原著，20 镜，68 秒，视频成本约 40 元\n· 先预览确认才花钱\n· MIT 开源\n\nhttps://t.co/UXxZMmhzpa https://t.co/NWUjo44JKi",
+      "repo": {
+        "fullName": "zenstory-ai/drama-skills",
+        "url": "https://github.com/zenstory-ai/drama-skills",
+        "description": "开源 AI 短剧/漫剧创作 skill 合集：剧本、角色资产、分镜 storyboard、图片/视频提示词、审查，适配 Claude Code 与 Codex | Open-source AI short drama / micro-drama skills for Claude Code & Codex: script, assets, storyboard, image & video prompts, review. MIT.",
+        "stars": 3671,
+        "language": "Python",
+        "pushedAt": "2026-11-02T08:30:37Z"
+      },
+      "metrics": {
+        "likes": 1,
+        "reposts": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 47
+      },
+      "otherSourceIds": []
+    }
+  ]
+}

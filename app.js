@@ -1,18 +1,29 @@
 /* 如水成文
-   提示词全部来自 data/index.json 与 data/YYYY-MM-DD.json。
+   提示词来自 data/index.json 与 data/YYYY-MM-DD.json。
+   仓库推荐来自 data/repos/index.json 与 data/repos/YYYY-MM-DD.json。
    更新内容时不要改这个文件。
 */
 (function () {
-  var PREFERRED = ["润色", "文案", "小红书", "剧本", "演讲", "邮件", "内容矩阵", "其他"];
+  var PROMPT_CATS = ["润色", "文案", "小红书", "剧本", "演讲", "邮件", "内容矩阵", "其他"];
+  var REPO_CATS = ["写作", "效率", "研究", "内容创作", "通用合集", "开发"];
   var LANG = { zh: "中文", en: "英文", ja: "日文", ko: "韩文" };
 
+  function freshBag() {
+    return {
+      entries: [],
+      q: "",
+      category: "全部",
+      sort: "time",
+      open: new Set(),
+      ready: false,
+      error: ""
+    };
+  }
+
   var state = {
-    entries: [],
-    q: "",
-    category: "全部",
-    sort: "time",
-    open: new Set(),
-    loading: false
+    view: "prompts",
+    prompts: freshBag(),
+    repos: freshBag()
   };
 
   var feed = document.getElementById("feed");
@@ -23,7 +34,12 @@
   var jump = document.getElementById("jump");
   var toastEl = document.getElementById("toast");
   var toTop = document.getElementById("to-top");
+  var qLabel = document.querySelector("label[for='q']");
   var toastTimer = 0;
+
+  function active() {
+    return state.view === "repos" ? state.repos : state.prompts;
+  }
 
   function h(tag, attrs) {
     var el = document.createElement(tag);
@@ -72,11 +88,11 @@
     return window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
   }
 
-  function resolveFile(file) {
+  function resolveFile(file, root) {
     var name = String(file || "").replace(/^\//, "");
     if (!name || name.indexOf("..") !== -1) throw new Error("非法数据路径");
     if (name.indexOf("data/") === 0) return name;
-    return "data/" + name;
+    return root + name;
   }
 
   function getJson(url) {
@@ -95,6 +111,28 @@
     return (Number(entry.likes) || 0) + (Number(entry.bookmarks) || 0);
   }
 
+  function repoHeat(entry) {
+    var metrics = entry.metrics || {};
+    return (Number(metrics.likes) || 0) + (Number(metrics.reposts) || 0) + (Number(metrics.bookmarks) || 0);
+  }
+
+  function starCount(entry) {
+    return Number(entry.repo && entry.repo.stars) || 0;
+  }
+
+  function formatStars(n) {
+    n = Math.max(0, Math.round(Number(n) || 0));
+    if (n < 1000) return String(n);
+    if (n < 1000000) {
+      var value = n / 1000;
+      var text = value >= 100
+        ? String(Math.round(value))
+        : (Math.round(value * 10) / 10).toFixed(1).replace(/\.0$/, "");
+      return text + "k";
+    }
+    return (Math.round(n / 100000) / 10).toFixed(1).replace(/\.0$/, "") + "m";
+  }
+
   function langLabel(code) {
     var key = String(code || "").toLowerCase();
     return LANG[key] || (key ? key.toUpperCase() : "");
@@ -102,8 +140,8 @@
 
   function safeUrl(url) {
     try {
-      var u = new URL(url);
-      if (u.protocol === "https:" || u.protocol === "http:") return u.href;
+      var parsed = new URL(url);
+      if (parsed.protocol === "https:" || parsed.protocol === "http:") return parsed.href;
     } catch (e) {}
     return "";
   }
@@ -133,8 +171,8 @@
 
   function formatTime(iso) {
     if (!iso || !isFinite(Date.parse(iso))) return "";
-    var p = shanghaiParts(iso);
-    return Number(p.month) + "月" + Number(p.day) + "日 " + p.hour + ":" + p.minute;
+    var parts = shanghaiParts(iso);
+    return Number(parts.month) + "月" + Number(parts.day) + "日 " + parts.hour + ":" + parts.minute;
   }
 
   function weekdayOf(date) {
@@ -150,26 +188,34 @@
     return bits[0] + "年" + bits[1] + "月" + bits[2] + "日 · " + weekdayOf(date);
   }
 
-  function categoriesOf(entries) {
+  function categoriesOf(entries, preferred) {
     var extra = [];
     entries.forEach(function (entry) {
       var cat = entry.category;
-      if (cat && PREFERRED.indexOf(cat) === -1 && extra.indexOf(cat) === -1) extra.push(cat);
+      if (cat && preferred.indexOf(cat) === -1 && extra.indexOf(cat) === -1) extra.push(cat);
     });
     extra.sort(function (a, b) { return a.localeCompare(b, "zh"); });
-    return ["全部"].concat(PREFERRED, extra);
+    return ["全部"].concat(preferred, extra);
   }
 
-  function hit(entry, q) {
+  function promptHit(entry, q) {
     if (!q) return true;
     var hay = [entry.title, entry.summary, entry.prompt].join("\n").toLowerCase();
     return hay.indexOf(q) !== -1;
   }
 
-  function ordered(list) {
+  function repoHit(entry, q) {
+    if (!q) return true;
+    var repo = entry.repo || {};
+    var hay = [entry.titleZh, entry.summaryZh, repo.fullName, repo.description].join("\n").toLowerCase();
+    return hay.indexOf(q) !== -1;
+  }
+
+  function orderedPrompts(list) {
+    var sort = state.prompts.sort;
     var out = list.slice();
     out.sort(function (a, b) {
-      if (state.sort === "heat") {
+      if (sort === "heat") {
         var byHeat = heatValue(b) - heatValue(a);
         if (byHeat) return byHeat;
       }
@@ -177,6 +223,30 @@
       if (byTime) return byTime;
       if (a.id === b.id) return 0;
       return a.id < b.id ? 1 : -1;
+    });
+    return out;
+  }
+
+  function orderedRepos(list) {
+    var sort = state.repos.sort;
+    var out = list.slice();
+    out.sort(function (a, b) {
+      if (sort === "heat") {
+        var byHeat = repoHeat(b) - repoHeat(a);
+        if (byHeat) return byHeat;
+      } else if (sort === "stars") {
+        var byStars = starCount(b) - starCount(a);
+        if (byStars) return byStars;
+      }
+      var byTime = timeValue(b.createdAt) - timeValue(a.createdAt);
+      if (byTime) return byTime;
+      if (sort === "time") return 0;
+      var starTie = starCount(b) - starCount(a);
+      if (starTie) return starTie;
+      var left = (a.repo && a.repo.fullName) || "";
+      var right = (b.repo && b.repo.fullName) || "";
+      if (left === right) return 0;
+      return left < right ? -1 : 1;
     });
     return out;
   }
@@ -196,6 +266,17 @@
     return groups;
   }
 
+  function dedupeRepos(entries) {
+    var best = new Map();
+    entries.forEach(function (entry) {
+      var name = entry.repo && entry.repo.fullName;
+      if (!name) return;
+      var prev = best.get(name);
+      if (!prev || timeValue(entry.createdAt) > timeValue(prev.createdAt)) best.set(name, entry);
+    });
+    return Array.from(best.values());
+  }
+
   function syncSticky() {
     var bar = document.querySelector(".toolbar");
     if (!bar) return;
@@ -203,9 +284,25 @@
   }
 
   function syncSort() {
+    var sort = active().sort;
     document.querySelectorAll(".sort button").forEach(function (btn) {
-      btn.setAttribute("aria-checked", String(btn.dataset.sort === state.sort));
+      btn.setAttribute("aria-checked", String(btn.dataset.sort === sort));
     });
+  }
+
+  function syncChrome() {
+    var bag = active();
+    var repos = state.view === "repos";
+    if (qInput.value !== bag.q) qInput.value = bag.q;
+    clearBtn.hidden = !bag.q;
+    var placeholder = repos ? "搜索仓库、标题或摘要" : "搜索标题、摘要或提示词";
+    qInput.placeholder = placeholder;
+    if (qLabel) qLabel.textContent = placeholder;
+    document.getElementById("sort-stars").hidden = !repos;
+    document.querySelector(".sort").classList.toggle("has-stars", repos);
+    document.getElementById("tab-prompts").setAttribute("aria-selected", String(!repos));
+    document.getElementById("tab-repos").setAttribute("aria-selected", String(repos));
+    syncSort();
   }
 
   function showToast(message) {
@@ -250,16 +347,16 @@
   }
 
   function fillJump() {
+    var entries = active().entries;
     var seen = [];
-    state.entries.forEach(function (entry) {
+    entries.forEach(function (entry) {
       if (entry.day && seen.indexOf(entry.day) === -1) seen.push(entry.day);
     });
     seen.sort(function (a, b) { return a < b ? 1 : -1; });
-    var placeholder = h("option", { value: "", text: "选择日期" });
-    jump.replaceChildren(placeholder);
+    jump.replaceChildren(h("option", { value: "", text: "选择日期" }));
     var newestYear = seen.length ? seen[0].slice(0, 4) : "";
     seen.forEach(function (day) {
-      var count = state.entries.filter(function (entry) { return entry.day === day; }).length;
+      var count = entries.filter(function (entry) { return entry.day === day; }).length;
       var bits = day.split("-").map(Number);
       var label = (day.slice(0, 4) === newestYear ? "" : bits[0] + "年") + bits[1] + "月" + bits[2] + "日 · " + count + "条";
       jump.append(h("option", { value: day, text: label }));
@@ -267,13 +364,14 @@
     jump.value = "";
   }
 
-  function renderChips(searched) {
+  function renderChips(allEntries, searched, preferred) {
+    var bag = active();
     var counts = new Map();
     searched.forEach(function (entry) {
       counts.set(entry.category, (counts.get(entry.category) || 0) + 1);
     });
-    var cats = categoriesOf(state.entries);
-    if (cats.indexOf(state.category) === -1) state.category = "全部";
+    var cats = categoriesOf(allEntries, preferred);
+    if (cats.indexOf(bag.category) === -1) bag.category = "全部";
     var left = chipsEl.scrollLeft;
     chipsEl.replaceChildren();
     cats.forEach(function (cat) {
@@ -282,33 +380,45 @@
         type: "button",
         class: "chip",
         "data-category": cat,
-        "aria-pressed": String(state.category === cat)
+        "aria-pressed": String(bag.category === cat)
       }, cat);
       btn.append(h("span", { class: "chip-count", text: String(n) }));
       chipsEl.append(btn);
     });
     chipsEl.scrollLeft = left;
+    var current = chipsEl.querySelector('[aria-pressed="true"]');
+    if (!current) return;
+    var chipBox = current.getBoundingClientRect();
+    var rowBox = chipsEl.getBoundingClientRect();
+    if (chipBox.left < rowBox.left || chipBox.right > rowBox.right - 4) {
+      chipsEl.scrollLeft += chipBox.left - rowBox.left - Math.max(0, (rowBox.width - chipBox.width) / 2);
+    }
   }
 
   function renderResult(count) {
-    var bits = [];
-    bits.push(state.sort === "heat" ? "按热度" : "最新在前");
-    if (state.category !== "全部") bits.push(state.category);
-    var q = state.q.trim();
+    var bag = active();
+    var bits = [sortWord(bag.sort)];
+    if (bag.category !== "全部") bits.push(bag.category);
+    var q = bag.q.trim();
     if (q) bits.push("“" + q + "”");
     bits.push(count + " 条");
     resultEl.textContent = bits.join(" · ");
   }
 
-  function cardView(entry) {
-    var open = state.open.has(entry.id);
-    var card = h("article", { class: "card" + (open ? " is-open" : ""), "data-id": entry.id });
+  function sortWord(sort) {
+    if (sort === "heat") return "按热度";
+    if (sort === "stars") return "按星标";
+    return "最新在前";
+  }
 
+  function cardView(entry) {
+    var open = state.prompts.open.has(entry.id);
+    var card = h("article", { class: "card" + (open ? " is-open" : ""), "data-id": entry.id });
     var catBtn = h("button", {
       type: "button",
       class: "cat",
       "data-pick": entry.category || "",
-      "aria-pressed": String(state.category === entry.category)
+      "aria-pressed": String(state.prompts.category === entry.category)
     }, entry.category || "未分类");
     var lang = langLabel(entry.lang);
     card.append(h("div", { class: "kicker" }, catBtn, lang ? h("span", { class: "lang", text: lang }) : null));
@@ -319,7 +429,6 @@
     if (entry.lang) prompt.lang = entry.lang;
     prompt.textContent = entry.prompt || "";
     card.append(prompt);
-
     card.append(h("button", {
       type: "button",
       class: "expand",
@@ -332,18 +441,18 @@
     var source = post
       ? h("a", { class: "btn", href: post, target: "_blank", rel: "noopener noreferrer" }, "查看原帖")
       : null;
-    var copyBtn = h("button", {
-      type: "button",
-      class: "btn btn-primary",
-      "data-copy": entry.id
-    }, "复制提示词");
-    card.append(h("div", { class: "actions" }, copyBtn, source));
+    card.append(h("div", { class: "actions" },
+      h("button", {
+        type: "button",
+        class: "btn btn-primary",
+        "data-copy": entry.id,
+        "data-idle": "复制提示词"
+      }, "复制提示词"),
+      source
+    ));
 
     var likes = Number(entry.likes) || 0;
     var bookmarks = Number(entry.bookmarks) || 0;
-    var likeEl = h("span", { class: "stat" }, icon("heart"), String(likes), h("span", { class: "sr", text: "次点赞" }));
-    var saveEl = h("span", { class: "stat" }, icon("bookmark"), String(bookmarks), h("span", { class: "sr", text: "次收藏" }));
-    var when = formatTime(entry.createdAt);
     var who = entry.authorName || (entry.author ? "@" + entry.author : "");
     var whoHref = authorHref(entry);
     var whoEl = who
@@ -351,12 +460,77 @@
         ? h("a", { class: "author", href: whoHref, target: "_blank", rel: "noopener noreferrer" }, who)
         : h("span", { class: "author", text: who }))
       : null;
+    var when = formatTime(entry.createdAt);
     card.append(h("div", { class: "meta" },
-      likeEl,
-      saveEl,
+      h("span", { class: "stat" }, icon("heart"), String(likes), h("span", { class: "sr", text: "次点赞" })),
+      h("span", { class: "stat" }, icon("bookmark"), String(bookmarks), h("span", { class: "sr", text: "次收藏" })),
       when ? h("time", { class: "when", datetime: entry.createdAt || "", text: when }) : null,
       whoEl
     ));
+    return card;
+  }
+
+  function repoCard(entry) {
+    var repo = entry.repo || {};
+    var key = repo.fullName || entry.id;
+    var open = state.repos.open.has(key);
+    var card = h("article", {
+      class: "card" + (open ? " is-open" : ""),
+      "data-kind": "repo",
+      "data-repo": key
+    });
+    var stars = starCount(entry);
+    card.append(h("div", { class: "kicker" },
+      h("button", {
+        type: "button",
+        class: "cat",
+        "data-pick": entry.category || "",
+        "aria-pressed": String(state.repos.category === entry.category)
+      }, entry.category || "未分类"),
+      h("span", { class: "star", title: stars + " 星" },
+        h("span", { class: "mark", "aria-hidden": "true" }, "★"),
+        formatStars(stars),
+        h("span", { class: "sr", text: stars + " 星标" })
+      )
+    ));
+    card.append(h("h3", { text: entry.titleZh || key || "未命名仓库" }));
+    if (key) card.append(h("p", { class: "repo-name", text: key }));
+    if (entry.summaryZh) card.append(h("p", { class: "summary", text: entry.summaryZh }));
+
+    if (entry.postText) {
+      var post = h("div", { class: "post-text", hidden: !open });
+      post.textContent = entry.postText;
+      card.append(post);
+      card.append(h("button", {
+        type: "button",
+        class: "expand",
+        "data-expand": key,
+        "aria-expanded": String(open)
+      }, open ? "收起" : "展开原文"));
+    }
+
+    var repoUrl = safeUrl(repo.url);
+    var openLink = repoUrl
+      ? h("a", { class: "btn btn-primary", href: repoUrl, target: "_blank", rel: "noopener noreferrer" }, "打开仓库")
+      : null;
+    var copyBtn = repoUrl
+      ? h("button", {
+        type: "button",
+        class: "btn",
+        "data-copy-url": repoUrl,
+        "data-idle": "复制链接"
+      }, "复制链接")
+      : null;
+    card.append(h("div", { class: "actions" }, openLink, copyBtn));
+
+    var username = entry.author && entry.author.username;
+    var when = formatTime(entry.createdAt);
+    var sourceText = (username ? "@" + username : "原帖") + (when ? " · " + when : "");
+    var postUrl = safeUrl(entry.url);
+    var source = postUrl
+      ? h("a", { class: "source", href: postUrl, target: "_blank", rel: "noopener noreferrer" }, sourceText)
+      : h("span", { class: "source", text: sourceText });
+    card.append(h("div", { class: "meta" }, source));
     return card;
   }
 
@@ -366,7 +540,7 @@
       var btn = el.parentElement.querySelector("[data-expand]");
       var card = el.closest(".card");
       if (!btn || !card) return;
-      var open = state.open.has(id);
+      var open = state.prompts.open.has(id);
       el.classList.remove("is-clamped");
       var full = el.scrollHeight;
       el.classList.add("is-clamped");
@@ -380,73 +554,114 @@
     });
   }
 
-  function render() {
-    var q = state.q.trim().toLowerCase();
-    var searched = state.entries.filter(function (entry) { return hit(entry, q); });
-    renderChips(searched);
-    var shown = ordered(state.category === "全部"
+  function paintDays(list, makeCard) {
+    if (active().sort !== "time") {
+      feed.append(h("div", { class: "cards" }, list.map(makeCard)));
+      return;
+    }
+    groupByDay(list).forEach(function (group) {
+      feed.append(h("section", { class: "day", id: "day-" + group.day },
+        h("h2", { class: "day-head" },
+          h("span", { class: "day-label", text: dayHeading(group.day) }),
+          h("span", { class: "day-count", text: group.entries.length + " 条" })
+        ),
+        h("div", { class: "cards" }, group.entries.map(makeCard))
+      ));
+    });
+  }
+
+  function renderEmpty(noun) {
+    feed.append(h("div", { class: "empty" },
+      h("p", { text: "没有匹配的" + noun }),
+      h("button", { type: "button", class: "btn", id: "reset" }, "清除筛选")
+    ));
+  }
+
+  function renderPrompts() {
+    var bag = state.prompts;
+    var q = bag.q.trim().toLowerCase();
+    var searched = bag.entries.filter(function (entry) { return promptHit(entry, q); });
+    renderChips(bag.entries, searched, PROMPT_CATS);
+    var shown = orderedPrompts(bag.category === "全部"
       ? searched
-      : searched.filter(function (entry) { return entry.category === state.category; }));
+      : searched.filter(function (entry) { return entry.category === bag.category; }));
     renderResult(shown.length);
     feed.replaceChildren();
-
-    if (!state.entries.length) {
+    if (!bag.entries.length) {
       feed.append(h("p", { class: "status", text: "还没有提示词。" }));
       return;
     }
     if (!shown.length) {
-      feed.append(h("div", { class: "empty" },
-        h("p", { text: "没有匹配的提示词" }),
-        h("button", { type: "button", class: "btn", id: "reset" }, "清除筛选")
-      ));
+      renderEmpty("提示词");
       return;
     }
-
-    if (state.sort === "heat") {
-      feed.append(h("div", { class: "cards" }, shown.map(cardView)));
-    } else {
-      groupByDay(shown).forEach(function (group) {
-        var heading = dayHeading(group.day);
-        feed.append(h("section", { class: "day", id: "day-" + group.day },
-          h("h2", { class: "day-head" },
-            h("span", { class: "day-label", text: heading }),
-            h("span", { class: "day-count", text: group.entries.length + " 条" })
-          ),
-          h("div", { class: "cards" }, group.entries.map(cardView))
-        ));
-      });
-    }
+    paintDays(shown, cardView);
     syncClamps();
   }
 
-  function showFatal(message) {
+  function renderRepos() {
+    var bag = state.repos;
+    var q = bag.q.trim().toLowerCase();
+    var searched = bag.entries.filter(function (entry) { return repoHit(entry, q); });
+    renderChips(bag.entries, searched, REPO_CATS);
+    var shown = orderedRepos(bag.category === "全部"
+      ? searched
+      : searched.filter(function (entry) { return entry.category === bag.category; }));
+    renderResult(shown.length);
+    feed.replaceChildren();
+    if (!bag.entries.length) {
+      feed.append(h("p", { class: "status", text: "还没有仓库。" }));
+      return;
+    }
+    if (!shown.length) {
+      renderEmpty("仓库");
+      return;
+    }
+    paintDays(shown, repoCard);
+  }
+
+  function showError(which, message) {
     feed.replaceChildren(h("div", { class: "empty" },
-      h("p", { text: "提示词没有载入。" }),
+      h("p", { text: which === "repos" ? "仓库没有载入。" : "提示词没有载入。" }),
       h("p", { class: "fine", text: message }),
-      h("button", { type: "button", class: "btn", id: "retry" }, "重试")
+      h("button", { type: "button", class: "btn", "data-retry": which }, "重试")
     ));
     resultEl.textContent = "";
   }
 
-  function scrollToResults() {
-    if (window.scrollY < 240) return;
-    var sticky = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--sticky-h"), 10) || 0;
-    var top = feed.getBoundingClientRect().top + window.scrollY - sticky - 8;
-    window.scrollTo({ top: Math.max(0, top), behavior: motion() });
+  function render() {
+    syncChrome();
+    var bag = active();
+    if (!bag.ready) {
+      if (bag.error && state.view === (bag === state.repos ? "repos" : "prompts")) {
+        showError(state.view, bag.error);
+        return;
+      }
+      feed.replaceChildren(h("p", { class: "status", text: "正在加载…" }));
+      resultEl.textContent = "正在加载…";
+      chipsEl.replaceChildren();
+      return;
+    }
+    if (state.view === "repos") renderRepos();
+    else renderPrompts();
   }
 
-  function load() {
-    if (state.loading) return;
-    state.loading = true;
-    feed.replaceChildren(h("p", { class: "status", text: "正在加载…" }));
-    resultEl.textContent = "正在加载…";
-    getJson("data/index.json").then(function (index) {
-      if (!Array.isArray(index)) throw new Error("data/index.json 应该是数组");
+  function loadCollection(which) {
+    var bag = which === "repos" ? state.repos : state.prompts;
+    var indexUrl = which === "repos" ? "data/repos/index.json" : "data/index.json";
+    var root = which === "repos" ? "data/repos/" : "data/";
+    bag.error = "";
+    if (state.view === which) {
+      feed.replaceChildren(h("p", { class: "status", text: "正在加载…" }));
+      resultEl.textContent = "正在加载…";
+    }
+    getJson(indexUrl).then(function (index) {
+      if (!Array.isArray(index)) throw new Error(indexUrl + " 应该是数组");
       var list = index.slice().sort(function (a, b) {
         return String(b.date).localeCompare(String(a.date));
       });
       return Promise.all(list.map(function (item) {
-        var url = resolveFile(item.file);
+        var url = resolveFile(item.file, root);
         return getJson(url).then(function (data) {
           var date = (data && data.date) || item.date;
           var entries = data && Array.isArray(data.entries) ? data.entries : [];
@@ -462,32 +677,81 @@
         });
       }));
     }).then(function (groups) {
-      state.entries = groups.reduce(function (all, items) { return all.concat(items); }, []);
-      fillJump();
-      render();
-      syncSticky();
+      var entries = groups.reduce(function (all, items) { return all.concat(items); }, []);
+      bag.entries = which === "repos" ? dedupeRepos(entries) : entries;
+      bag.ready = true;
+      bag.error = "";
+      if (state.view === which) {
+        fillJump();
+        render();
+        syncSticky();
+      }
     }).catch(function (err) {
       console.error(err);
-      var message = (err && err.message) || "请用本地服务器打开本站，不要直接双击 HTML 文件。";
-      showFatal(message);
-    }).then(function () {
-      state.loading = false;
+      bag.ready = false;
+      bag.error = (err && err.message) || "请用本地服务器打开本站，不要直接双击 HTML 文件。";
+      if (state.view === which) showError(which, bag.error);
     });
   }
+
+  function viewFromHash() {
+    var hash = location.hash;
+    if (hash === "#repos") return "repos";
+    if (hash === "#prompts" || hash === "" || hash === "#") return "prompts";
+    return "";
+  }
+
+  function selectView(view, fromHistory) {
+    if (view !== "prompts" && view !== "repos") view = "prompts";
+    var changed = state.view !== view;
+    state.view = view;
+    if (!fromHistory) {
+      var next = view === "repos" ? "#repos" : "#prompts";
+      if (location.hash !== next) history.pushState({ view: view }, "", next);
+    }
+    if (!changed) return;
+    syncChrome();
+    if (active().ready) fillJump();
+    render();
+    syncSticky();
+    if (changed) window.scrollTo({ top: 0, behavior: motion() });
+  }
+
+  function scrollToResults() {
+    if (window.scrollY < 240) return;
+    var sticky = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--sticky-h"), 10) || 0;
+    var top = feed.getBoundingClientRect().top + window.scrollY - sticky - 8;
+    window.scrollTo({ top: Math.max(0, top), behavior: motion() });
+  }
+
+  document.getElementById("tab-prompts").addEventListener("click", function () {
+    selectView("prompts");
+  });
+  document.getElementById("tab-repos").addEventListener("click", function () {
+    selectView("repos");
+  });
+  window.addEventListener("hashchange", function () {
+    var view = viewFromHash();
+    if (view) selectView(view, true);
+  });
+  window.addEventListener("popstate", function () {
+    var view = viewFromHash();
+    if (view) selectView(view, true);
+  });
 
   document.getElementById("tools").addEventListener("submit", function (event) {
     event.preventDefault();
   });
 
   qInput.addEventListener("input", function () {
-    state.q = qInput.value;
-    clearBtn.hidden = !state.q;
+    active().q = qInput.value;
+    clearBtn.hidden = !qInput.value;
     render();
   });
 
   clearBtn.addEventListener("click", function () {
     qInput.value = "";
-    state.q = "";
+    active().q = "";
     clearBtn.hidden = true;
     qInput.focus();
     render();
@@ -495,7 +759,9 @@
 
   document.querySelectorAll(".sort button").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      state.sort = btn.dataset.sort;
+      if (btn.hidden) return;
+      if (btn.dataset.sort === "stars" && state.view !== "repos") return;
+      active().sort = btn.dataset.sort;
       syncSort();
       render();
     });
@@ -504,7 +770,7 @@
   chipsEl.addEventListener("click", function (event) {
     var btn = event.target.closest("[data-category]");
     if (!btn) return;
-    state.category = btn.dataset.category;
+    active().category = btn.dataset.category;
     render();
     scrollToResults();
   });
@@ -513,8 +779,9 @@
     var date = jump.value;
     jump.value = "";
     if (!date) return;
-    if (state.sort !== "time") {
-      state.sort = "time";
+    var bag = active();
+    if (bag.sort !== "time") {
+      bag.sort = "time";
       syncSort();
     }
     render();
@@ -529,45 +796,61 @@
   feed.addEventListener("click", function (event) {
     var btn = event.target.closest("button");
     if (!btn || !feed.contains(btn)) return;
-    if (btn.id === "retry") {
-      feed.replaceChildren(h("p", { class: "status", text: "正在加载…" }));
-      load();
+    if (btn.dataset.retry) {
+      loadCollection(btn.dataset.retry);
       return;
     }
     if (btn.id === "reset") {
+      var bag = active();
       qInput.value = "";
-      state.q = "";
-      state.category = "全部";
+      bag.q = "";
+      bag.category = "全部";
       clearBtn.hidden = true;
       render();
       return;
     }
     if (btn.dataset.pick) {
-      state.category = state.category === btn.dataset.pick ? "全部" : btn.dataset.pick;
+      var current = active();
+      current.category = current.category === btn.dataset.pick ? "全部" : btn.dataset.pick;
       render();
       scrollToResults();
       return;
     }
     if (btn.dataset.expand) {
-      var id = btn.dataset.expand;
-      if (state.open.has(id)) state.open.delete(id);
-      else state.open.add(id);
+      var key = btn.dataset.expand;
+      var card = btn.closest(".card");
+      var openSet = active().open;
+      if (openSet.has(key)) openSet.delete(key);
+      else openSet.add(key);
+      if (card && card.dataset.kind === "repo") {
+        var post = card.querySelector(".post-text");
+        var open = openSet.has(key);
+        if (post) post.hidden = !open;
+        btn.textContent = open ? "收起" : "展开原文";
+        btn.setAttribute("aria-expanded", String(open));
+        card.classList.toggle("is-open", open);
+        return;
+      }
       syncClamps();
       return;
     }
-    if (btn.dataset.copy) {
-      var card = btn.closest(".card");
-      var prompt = card ? card.querySelector(".prompt") : null;
-      var text = prompt ? prompt.textContent : "";
+    if (btn.dataset.copyUrl || btn.dataset.copy) {
+      var idle = btn.dataset.idle || "复制提示词";
+      var text = btn.dataset.copyUrl || "";
+      if (!text) {
+        var prompt = btn.closest(".card");
+        prompt = prompt ? prompt.querySelector(".prompt") : null;
+        text = prompt ? prompt.textContent : "";
+      }
       copyText(text).then(function (ok) {
-        showToast(ok ? "已复制" : "复制失败，请长按提示词手动复制");
+        showToast(ok ? "已复制" : "复制失败，请长按文字手动复制");
         if (!ok) return;
         btn.classList.add("is-done");
         btn.textContent = "已复制";
         window.clearTimeout(btn._copyTimer);
         btn._copyTimer = window.setTimeout(function () {
           btn.classList.remove("is-done");
-          btn.textContent = "复制提示词";
+          btn.textContent = idle;
         }, 1600);
       });
     }
@@ -586,8 +869,11 @@
 
   window.addEventListener("resize", function () {
     syncSticky();
-    syncClamps();
+    if (state.view === "prompts") syncClamps();
   });
 
-  load();
+  state.view = viewFromHash() || "prompts";
+  syncChrome();
+  loadCollection("prompts");
+  loadCollection("repos");
 })();

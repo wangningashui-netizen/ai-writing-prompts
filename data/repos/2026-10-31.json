@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2116440761931862175",
+      "url": "https://x.com/x5cnhp/status/2116440761931862175",
+      "author": {
+        "name": "mantin",
+        "username": "x5cnhp"
+      },
+      "createdAt": "2026-10-31T08:02:53.000Z",
+      "titleZh": "Prompt Optimizer 提示词优化器",
+      "summaryZh": "开源的 AI 提示词优化工具，帮你拆解、重构和打磨原始提示词，让模型输出更贴近预期；提供 Web、桌面端、浏览器扩展等多种入口。适合常写提示词、想少走试错弯路的人。",
+      "category": "效率",
+      "postText": "Prompt-Optimizer 这个开源项目，专治提示词写不好的毛病。\n\n它会把你的原始提示词拆开、重构、再打磨，让模型输出更贴你的预期，省得你瞎试一堆组合。GitHub 地址：https://t.co/kRcB1Pfazd https://t.co/jyW4YWbYBy",
+      "repo": {
+        "fullName": "linshenkx/prompt-optimizer",
+        "url": "https://github.com/linshenkx/prompt-optimizer",
+        "description": "An AI prompt optimizer for writing better prompts and getting better AI results.",
+        "stars": 40368,
+        "language": "TypeScript",
+        "pushedAt": "2026-11-02T05:40:49Z"
+      },
+      "metrics": {
+        "likes": 0,
+        "reposts": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 95
+      },
+      "otherSourceIds": [
+        "2114650744808751345"
+      ]
+    },
+    {
+      "id": "2116260002050781285",
+      "url": "https://x.com/FGallagher45519/status/2116260002050781285",
+      "author": {
+        "name": "Francis G",
+        "username": "FGallagher45519"
+      },
+      "createdAt": "2026-10-30T20:04:37.000Z",
+      "titleZh": "Writing Agent 多智能体写作助手",
+      "summaryZh": "开源多智能体对话写作助手（独立 Windows 客户端，配好模型 API 即可用）：写作导演协同主笔、读者审校和“去 AI 味”专家，从选题到成稿逐段共创。适合不想折腾 Claude Code 的写作者。",
+      "category": "写作",
+      "postText": "我写东西最怕一股AI味。翻到开源项目writing-agent挺逗：它不靠一个提示词出全文，而是导演带主笔、审校，还配个专管'去AI味'的专家，十几步逐段打磨，每步能喊停。你看现在多少AI文一眼假？\n\n#AItools #OpenSource\nhttps://t.co/XUQbdANqEJ",
+      "repo": {
+        "fullName": "dongbeixiaohuo/writing-agent",
+        "url": "https://github.com/dongbeixiaohuo/writing-agent",
+        "description": "🚀 Writing Agent：开源多智能体对话写作助手。独立 Windows 客户端，无需 Claude Code，配置模型 API 即可使用。写作导演协同主笔、读者审校及“去 AI 味”等专家，从选题到成稿逐步共创，通过自然对话确认与修改。工程化 Harness 管理阶段确认、版本保存与中断恢复。内置 99 项模型连接预设，支持 DeepSeek、智谱 GLM、MiniMax 等及自定义接口；可选 Parallel 免费搜索与 Tavily 辅助事实核查，支持本地项目、版本追溯和排版导出。目前为公开 RC 测试版，原版 Claude Code Skills + Subagents 仍保留，部分能力尚在迁移，欢迎体验反馈。",
+        "stars": 446,
+        "language": "TypeScript",
+        "pushedAt": "2026-11-01T03:44:06Z"
+      },
+      "metrics": {
+        "likes": 0,
+        "reposts": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "quotes": 0,
+        "impressions": 2
+      },
+      "otherSourceIds": []
+    }
+  ]
+}
