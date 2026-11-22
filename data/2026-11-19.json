@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2123443476805157359",
+      "title": "爆款广告脚本扩写 20 版",
+      "category": "文案",
+      "summary": "基于一条跑量广告脚本，换代言人、场景和故事元素，保持情绪和人群，扩出 20 个新概念。",
+      "prompt": "Give me 20 more concepts that would follow a similar structure. What would change would be the spokesperson, the situation, and elements of the story. Keep the same emotion going and the same avatar",
+      "lang": "en",
+      "author": "vincent_chipper",
+      "authorName": "Vincent Huygens",
+      "url": "https://x.com/vincent_chipper/status/2123443476805157359",
+      "createdAt": "2026-11-19T15:49:11.000Z",
+      "likes": 1,
+      "bookmarks": 1
+    },
+    {
+      "id": "2123382783305523424",
+      "title": "有边界的文案修改",
+      "category": "润色",
+      "summary": "给 AI 改文案划清边界：保留事实、删空话、首句讲清收益、不编数据，并列出改动。",
+      "prompt": "保留事实和原意，删掉空话；第一句说清读者能得到什么；不添加我没提供的数据和经历；最后列出你改了哪里。",
+      "lang": "zh",
+      "author": "Achenwhak",
+      "authorName": "Achen",
+      "url": "https://x.com/Achenwhak/status/2123382783305523424",
+      "createdAt": "2026-11-19T11:48:00.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2123345477693264098",
+      "title": "把数字改写成影响",
+      "category": "文案",
+      "summary": "把指标数据改写成对特定受众的意义：变化了什么、为什么重要、希望他们做什么。",
+      "prompt": "Take these metrics and rewrite them as impact for this audience: what changed, why it matters to them, and what I want them to do next.",
+      "lang": "en",
+      "author": "betterpromptsai",
+      "authorName": "AI Prompt Guide",
+      "url": "https://x.com/betterpromptsai/status/2123345477693264098",
+      "createdAt": "2026-11-19T09:19:46.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2123246901428682918",
+      "title": "社交媒体文案模板",
+      "category": "文案",
+      "summary": "以新媒体编辑身份，按主题、读者和平台写一篇开头抓人、自然不浮夸、结尾引互动的文案。",
+      "prompt": "你是一名专业的新媒体文案编辑。\n\n请根据我提供的信息，写一篇适合社交媒体发布的文案。\n\n要求：\n\n开头用一句话吸引注意力\n语言自然，像真人交流\n突出产品或内容的实际价值\n不要使用夸张、空洞的表达\n最后加入一个能引发互动的问题\n\n我的主题是：【填写主题】\n\n目标读者是：【填写人群】\n\n发布平台是：【填写平台】",
+      "lang": "zh",
+      "author": "rdybat",
+      "authorName": "普通人研究所",
+      "url": "https://x.com/rdybat/status/2123246901428682918",
+      "createdAt": "2026-11-19T02:48:03.000Z",
+      "likes": 0,
+      "bookmarks": 1
+    }
+  ]
+}

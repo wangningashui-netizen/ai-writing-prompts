@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-22",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2124367269992312873",
+      "title": "总结自己的写作风格",
+      "category": "其他",
+      "summary": "贴入 3 篇自己的代表作，让 AI 归纳出 5 条写作风格规则，放进以后每个提示词开头。",
+      "prompt": "\"Describe my writing style in 5 rules.\"",
+      "lang": "en",
+      "author": "montiusAI",
+      "authorName": "MontiusAI",
+      "url": "https://x.com/montiusAI/status/2124367269992312873",
+      "createdAt": "2026-11-22T05:00:00.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2124286835752862074",
+      "title": "报价未回复的四封跟进邮件",
+      "category": "邮件",
+      "summary": "为无回复的报价写第 2、7、14、21 天四封简短友好的跟进邮件，不用强推销语气。",
+      "prompt": "Write four short follow-up emails for a quote that got no reply. Under 120 words each. Plain, friendly tone. No pushy sales language.\n\nQuote details: Customer: [NAME] Sent on: [DATE] Amount: [AMOUNT] What it covered: [SCOPE] Something useful to add: [PHOTO / TIMELINE / WARRANTY NOTE]\n\nEmail 1 (day 2): Confirm they received the quote, and ask if anything needs clarification. Email 2 (day 7): Re-enter with the useful thing above. Give them a real reason to reply.\n\nEmail 3 (day 14): Last check. Offer to check back later if the timing is wrong. Email 4 (day 21): Short close. I'm closing the quote on my end, reach out anytime.",
+      "lang": "en",
+      "author": "justinfredette",
+      "authorName": "Justin Fredette",
+      "url": "https://x.com/justinfredette/status/2124286835752862074",
+      "createdAt": "2026-11-21T23:40:23.000Z",
+      "likes": 1,
+      "bookmarks": 0
+    }
+  ]
+}
