@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2122707185775829326",
+      "title": "杂乱会议笔记转任务清单",
+      "category": "其他",
+      "summary": "把会议笔记整理成「任务／待问问题／未决定」三栏，只用笔记里的事实，缺失处标注待确认。",
+      "prompt": "Turn the notes below into a task list.\n\nUse three headings:\n- Tasks\n- Questions to ask\n- Not decided\n\nUse only facts in the notes. Do not invent dates, prices or decisions. Mark missing information as \"Needs confirmation\".\n\nNotes:\nThe client liked the page layout.\nThey want a shorter headline.\nI need to send two headline options.\nThey said next week, but no exact deadline was agreed.\nI need to ask whether the logo is final.\nPayment was not discussed.",
+      "lang": "en",
+      "author": "Ling52y",
+      "authorName": "Ling | Free AI Workflows",
+      "url": "https://x.com/Ling52y/status/2122707185775829326",
+      "createdAt": "2026-11-17T15:03:25.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2122706577656557628",
+      "title": "10 条打磨个人服务介绍",
+      "category": "文案",
+      "summary": "10 条提示词逐步检查和改写自己的服务介绍：首句、缺失要素、去废话、写给陌生人的版本等。",
+      "prompt": "1. \"look at this: [paste your offer or service page link]. in one sentence, what do you think i sell and who is it for? be honest.\"\nif it gets it wrong, start with the first line on the page.\n\n2. \"rewrite the first line of my offer so a stranger knows who it's for and what they get. give me 5 options in plain words.\"\n\n3. \"what's missing from this offer: who it's for, what i do, what they get, how someone can start, and one real thing i've done?\"\n\n4. \"cut the fluff. rewrite this offer in 8 short lines a busy person could screenshot.\"\n\n5. \"look at my x profile too: https://t.co/hQigusu5P0]. does my offer match what i post about? where do they disagree?\"\n\n6. \"write 3 versions of my offer for someone who has never heard of me. no buzzwords. no big promises.\"\n\n7. \"if you were the person i want to work with, what would make you leave this page without messaging me? fix each thing.\"\n\n8. \"turn this offer into a simple message i could send after someone asks what i do. 3 lines. no pitch deck energy.\"\n\n9. \"here's my current offer: [paste it]. make it easier to understand. don't make it sound smarter.\"\n\n10. \"based on this offer, give me 5 places i could look for a first client, and one sentence i could send each of them. drafts only. i still hit send.\"",
+      "lang": "en",
+      "author": "HeyYoGB",
+      "authorName": "GBE",
+      "url": "https://x.com/HeyYoGB/status/2122706577656557628",
+      "createdAt": "2026-11-17T15:01:00.000Z",
+      "likes": 30,
+      "bookmarks": 25
+    },
+    {
+      "id": "2122665655858061377",
+      "title": "按岗位定制求职信",
+      "category": "其他",
+      "summary": "对照简历和职位描述分析匹配度与差距，再写一封自然、具体、不编造经历的求职信。",
+      "prompt": "[PASTE YOUR CV AND THE FULL JOB DESCRIPTION BEFORE OR AFTER THIS PROMPT]\n\n\"Act as an experienced recruitment specialist and professional cover letter writer.\n\nI am applying for the role described in the job description I have provided.\n\nYour task is to analyse my CV against the job description and write a compelling, personalised cover letter that positions me as a strong candidate for this specific role.\n\nBefore writing, follow these instructions:\n\n1. Carefully analyse the job description and identify the most important responsibilities, required skills, qualifications and qualities the employer is looking for.\n\n2. Review my CV and identify the experiences, achievements, skills and qualifications that directly match those requirements.\n\n3. Identify transferable skills that could make me a suitable candidate, even if my previous job titles or industry experience are different.\n\n4. Prioritize my strongest and most relevant experiences instead of trying to include everything in my CV.\n\n5. Highlight specific achievements and measurable results where available. Do not invent statistics, responsibilities, qualifications or experiences.\n\n6. Explain how my experience and skills can help the company solve problems, perform the responsibilities of the role and contribute to its goals.\n\n7. Research the company using any information I provide. If you have access to the internet, verify relevant information about its products, services, mission or recent activities. \n\nDo NOT make up company information.\n\n8. Write an opening paragraph that immediately establishes my interest in the specific position and gives the hiring manager a reason to keep reading.\n\n9. Make the letter sound natural, confident, professional and human. Avoid generic expressions, exaggerated claims, unnecessary adjectives and robotic language.\n\n10. Do not simply repeat my CV. Tell a compelling story about why my experience makes me suitable for this particular opportunity.\n\n11. Address any important requirements in the job description that may not be immediately obvious from my CV. Do not pretend I have experience I do not possess.\n\n12. Keep the letter concise, ideally between 250 and 400 words, and ensure it fits on one page.\n\n13. Use a professional structure with an appropriate greeting, engaging introduction, relevant body paragraphs and a strong closing.\n\n14. Avoid phrases such as 'I am writing to express my interest', 'I believe I am the perfect candidate' and other overused cover letter clichés.\n\n15. Do not use bullet points in the final cover letter unless specifically requested.\n\nHere are my additional details:\n• Job title: [INSERT JOB TITLE]\n• Company name: [INSERT COMPANY NAME]\n• Hiring manager's name: [INSERT NAME IF AVAILABLE]\n• Why I want to work for this company: [EXPLAIN YOUR REASONS]\n• My most relevant achievement: [INSERT ACHIEVEMENT]\n• Skills I particularly want to highlight: [INSERT SKILLS]\n• Additional information about my experience: [INSERT DETAILS]\n\nFirst, give me a brief analysis of how my experience matches the job requirements and identify any gaps.\n\nThen write the final cover letter.\n\nEnsure that every claim in the letter is supported by the information I have provided.\"",
+      "lang": "en",
+      "author": "Chioma__Amadi",
+      "authorName": "Chioma Amadi",
+      "url": "https://x.com/Chioma__Amadi/status/2122665655858061377",
+      "createdAt": "2026-11-17T12:18:24.000Z",
+      "likes": 4,
+      "bookmarks": 17
+    },
+    {
+      "id": "2122654431603019916",
+      "title": "一个想法拆成多平台内容",
+      "category": "内容矩阵",
+      "summary": "把一个想法同时扩展成 X 长帖大纲、Instagram 文案、邮件简报和二次利用思路。",
+      "prompt": "\"Act as my full content system. Take this idea and create: X thread outline, Instagram caption, email newsletter, and repurposing ideas.\"",
+      "lang": "en",
+      "author": "tec_sany",
+      "authorName": "Md. Robius Sany",
+      "url": "https://x.com/tec_sany/status/2122654431603019916",
+      "createdAt": "2026-11-17T11:33:48.000Z",
+      "likes": 2,
+      "bookmarks": 0
+    },
+    {
+      "id": "2122500531965051317",
+      "title": "只审稿不重写",
+      "category": "润色",
+      "summary": "让 AI 从事实、逻辑、歧义和遗漏四方面审稿，只指出最值得改的 3 个问题。",
+      "prompt": "“请不要重写我的内容。先从事实准确性、逻辑漏洞、表达歧义和遗漏信息四个方面进行审查。指出最值得修改的 3 个问题，并解释原因。没有问题的地方不要刻意挑错。”",
+      "lang": "zh",
+      "author": "meigu718",
+      "authorName": "科技潮汐📈",
+      "url": "https://x.com/meigu718/status/2122500531965051317",
+      "createdAt": "2026-11-17T01:22:15.000Z",
+      "likes": 12,
+      "bookmarks": 1
+    },
+    {
+      "id": "2122494243973595594",
+      "title": "先采访再写简历",
+      "category": "其他",
+      "summary": "三步写简历：先让 AI 逐个提问挖出量化事实，再只用这些事实写一页简历，最后以招聘经理视角删改。",
+      "prompt": "\"I'm applying for [role] at [company]. Here's the job post: [paste]. Before you write anything, interview me. Ask one question at a time about my last 2 jobs. Push for numbers: how many, how much, how fast, compared to what. If I say 'helped with' or 'worked on,' ask what I actually did. Stop after 12 questions and list the 5 strongest facts you got.\"\n\nThen:\n\n\"Write a one-page resume using only those facts. Don't add any claim I didn't make. Every bullet starts with a verb and ends with a number or a named result.\"\n\nLast step, the one people skip:\n\n\"Read this as the hiring manager for that job post. Mark every bullet you'd skim past. Rewrite those or cut them.\"",
+      "lang": "en",
+      "author": "sotappp9",
+      "authorName": "sotappp | AI for builders",
+      "url": "https://x.com/sotappp9/status/2122494243973595594",
+      "createdAt": "2026-11-17T00:57:16.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-20",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2123589367067459607",
+      "title": "去 AI 味重写",
+      "category": "润色",
+      "summary": "重写文本以去除排比、套话和过于工整的节奏，保留事实，改用一线从业者口吻。",
+      "prompt": "请重写以下文本，彻底消除典型的大模型写作痕迹。要求：\n1. 删掉所有虚浮的排比句、宏大叙事与空洞总结\n2. 打破过于工整的段落节奏，长短句自然穿插\n3. 替换掉“不可否认”、“值得注意的是”、“总而言之”等高频套话\n4. 保留核心事实与论据，改用一线从业者口吻直接陈述",
+      "lang": "zh",
+      "author": "KOF97AI",
+      "authorName": "Nathan AI Lab ｜ AI Agent 实战",
+      "url": "https://x.com/KOF97AI/status/2123589367067459607",
+      "createdAt": "2026-11-20T01:28:54.000Z",
+      "likes": 7,
+      "bookmarks": 1
+    }
+  ]
+}

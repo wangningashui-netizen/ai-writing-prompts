@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-18",
+  "timezone": "Asia/Shanghai",
+  "entries": [
+    {
+      "id": "2123042633664897162",
+      "title": "视觉平台钩子改写",
+      "category": "小红书",
+      "summary": "把一个核心想法改写成 3 种视觉平台高点击钩子：反直觉痛点、步骤化框架、幕后历程。",
+      "prompt": "将这个核心想法 [核心产品/想法] 改写为 3 种适合视觉平台的高点击率钩子风格：(1) 反直觉痛点，(2) 步骤化框架，(3) 幕后从零到一的历程。",
+      "lang": "zh",
+      "author": "Lam_Xcom",
+      "authorName": "LamMind",
+      "url": "https://x.com/Lam_Xcom/status/2123042633664897162",
+      "createdAt": "2026-11-18T13:16:22.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    },
+    {
+      "id": "2122940367230443852",
+      "title": "长内容改写成五个平台版本",
+      "category": "内容矩阵",
+      "summary": "把一篇长内容改编成 X 帖、5 页轮播图脚本、60 秒视频脚本、WhatsApp 群发和 LinkedIn 帖子。",
+      "prompt": "\"Here is a piece of content I created: [paste content].\n\nRepurpose it into:\n\nAn X post under 280 characters that captures the main insight.\nA 5-slide Instagram carousel script: one hook slide, three value slides and one CTA slide.\nA 60-second video script with a hook, problem, solution and CTA.\nA WhatsApp broadcast under 60 words for my business audience.\nA LinkedIn post of approximately 150 words, written in a professional but conversational tone and ending with a question.\n\nKeep the original meaning, but adapt the language, structure and presentation to suit each platform. Don't simply shorten the original text or make all five versions sound alike.\"",
+      "lang": "en",
+      "author": "i_am_agbeke",
+      "authorName": "Oluwakemi Oyefeso",
+      "url": "https://x.com/i_am_agbeke/status/2122940367230443852",
+      "createdAt": "2026-11-18T06:30:00.000Z",
+      "likes": 2,
+      "bookmarks": 1
+    },
+    {
+      "id": "2122856050336702848",
+      "title": "聊天记录提取事项表",
+      "category": "其他",
+      "summary": "从聊天或会议记录中提取事项、状态、负责人、时间和原话，区分已定与待定，不猜测缺失信息。",
+      "prompt": "Extract: item | current status | person | time | supporting quote.\nSeparate confirmed, proposed, pending and cancelled. Mark explicit changes; proposals are not decisions.\nWrite ‘not stated’ for gaps. Do not guess dates or addresses. End with up to 3 questions still needed. Do not send messages or create events.",
+      "lang": "en",
+      "author": "UncleJAI",
+      "authorName": "Uncle J",
+      "url": "https://x.com/UncleJAI/status/2122856050336702848",
+      "createdAt": "2026-11-18T00:54:57.000Z",
+      "likes": 0,
+      "bookmarks": 0
+    }
+  ]
+}
